@@ -12,7 +12,6 @@ export const ExpenseList = (props) => (
         return <ExpenseListItem key={expense.id} {...expense} />;
       })
     )}
-    <h1>Expense List</h1>
   </div>
 );
 
