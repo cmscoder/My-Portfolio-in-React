@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "test") {
 }
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: ["babel-polyfill", "./src/app.js"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public", "dist"),
@@ -35,6 +35,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               sourceMap: true,
+              url: false,
             },
           },
           {
