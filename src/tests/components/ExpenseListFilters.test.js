@@ -35,8 +35,6 @@ test("should render ExpenseListFilters with alt data correctly", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-// should handle text change (spyes)
-
 test("should handle text change", () => {
   const value = "rent";
   wrapper.find("input").simulate("change", {
@@ -45,7 +43,6 @@ test("should handle text change", () => {
   expect(setTextFilter).toHaveBeenLastCalledWith(value);
 });
 
-// should sort by date(spyes)
 test("should sort by date", () => {
   const value = "date";
   wrapper.setProps({
@@ -57,8 +54,6 @@ test("should sort by date", () => {
   expect(sortByDate).toHaveBeenCalled();
 });
 
-// should sort by amount(spyes)
-
 test("should sort by date", () => {
   const value = "amount";
   wrapper.setProps({
@@ -69,7 +64,6 @@ test("should sort by date", () => {
   });
   expect(sortByAmount).toHaveBeenCalled();
 });
-// should handle date changes (spyes)
 
 test("should handle date changes", () => {
   const startDate = moment(0).add(4, "years");
@@ -81,8 +75,6 @@ test("should handle date changes", () => {
   expect(setStartDate).toHaveBeenLastCalledWith(startDate);
   expect(setEndDate).toHaveBeenLastCalledWith(endDate);
 });
-
-// should handle date focus changes (state)
 
 test("should handle date focus changes", () => {
   const calendarFocused = "endDate";

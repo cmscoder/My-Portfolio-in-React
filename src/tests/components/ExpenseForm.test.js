@@ -47,9 +47,6 @@ test("should set note on textarea change", () => {
   expect(wrapper.state("note")).toBe(value);
 });
 
-// should set amount if valid input
-// 23.50
-
 test("should set amount if valid input", () => {
   const value = "23.50";
   const wrapper = shallow(<ExpenseForm />);
@@ -61,9 +58,6 @@ test("should set amount if valid input", () => {
     });
   expect(wrapper.state("amount")).toBe(value);
 });
-
-// should not set amount if invalid input
-// 12.122
 
 test("should not set amount if invalid input", () => {
   const value = "23.122";
@@ -100,8 +94,6 @@ test("should set new date on date change", () => {
   wrapper.find("withStyles(SingleDatePicker)").prop("onDateChange")(now);
   expect(wrapper.state("createdAt")).toEqual(now);
 });
-
-// should set calendar focus on change
 
 test("should set calendar focus on change", () => {
   const focused = true;
