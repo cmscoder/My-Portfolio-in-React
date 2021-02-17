@@ -1,33 +1,46 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import AddExpensePage from "./../components/AddExpensePage";
-import EditExpensePage from "./../components/EditExpensePage";
-import ExpenseDashboardPage from "./../components/ExpenseDashboardPage";
-import LoginPage from "./../components/LoginPage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./../pages/Home";
+import About from "./../components/About";
+import Portfolio from "./../pages/Portfolio";
+import Skills from "./../components/Skills";
+import Services from "./../components/Services";
+import Contact from "./../components/Contact";
+import Navbar from "./../components/Navbar";
+import Projects from "./../components/Projects";
 import NotFoundPage from "./../components/NotFoundPage";
-import PrivateRoute from "./PrivateRoute";
-import PublicRoute from "./PublicRoute";
-
-export const history = createBrowserHistory();
+import Modal from "./../components/Modal";
 
 const AppRouter = () => (
-  <Router history={history}>
+  <BrowserRouter>
+    <Navbar />
     <div>
       <Switch>
-        <PublicRoute path="/" component={LoginPage} exact={true} />
-        <PrivateRoute
-          path="/dashboard"
-          component={ExpenseDashboardPage}
-          exact={true}
-        />
-        <PrivateRoute path="/create" component={AddExpensePage} />
-        <PrivateRoute path="/edit/:id" component={EditExpensePage} />
-
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/services">
+          <Services />
+        </Route>
+        <Route path="/skills">
+          <Skills />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/portfolio">
+          <Portfolio component={Modal} />
+        </Route>
         <Route component={NotFoundPage} />
       </Switch>
     </div>
-  </Router>
+  </BrowserRouter>
 );
 
 export default AppRouter;

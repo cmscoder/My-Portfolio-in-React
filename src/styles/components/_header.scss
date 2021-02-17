@@ -1,17 +1,23 @@
 .header {
-  background: $dark-blue;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("/images/banner.png");
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
 }
 
 .header__content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: $s-size 0;
+  color: $off-white;
+  text-align: center;
+  margin-left: $xl-size;
 }
 .header__title {
   color: white;
-  text-decoration: none;
-  h1 {
-    margin: 0;
-  }
+  font-size: $font-size-large;
+  margin: 0 0 $m-size 0;
+  line-height: 1;
 }

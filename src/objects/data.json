@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "/images/compete-img.png",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": ""
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/images/cocktail-img.png",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": "",
+        "css": "",
+        "js": ""
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/images/mounit-img.png",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": "",
+        "css": ""
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/images/sunshine-img.png",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": "",
+        "css": ""
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  }
+]

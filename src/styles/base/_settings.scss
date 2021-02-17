@@ -4,12 +4,25 @@ $grey: #666;
 $blue: #1c88bf;
 $dark-blue: #364051;
 $off-white: #f7f7f7;
+$primaryColor: #476a2e;
+$transparentColor: #00000000;
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 // Font Size
-$font-size-large: 1.8rem;
+$font-size-large: 4rem;
+$font-size-medium: 2rem;
 $font-size-small: 1.4rem;
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
-$xl-size: 4.8rem;
+$xl-size: 10.8rem;
+%col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 $desktop-breakpoint: 45rem;
+
+$smallWidth: 85vw;
+$fullWidth: 1170px;
+
+$mainTransition: all 0.3s linear;

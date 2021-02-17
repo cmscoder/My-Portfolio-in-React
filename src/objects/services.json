@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "type": "0",
+    "image": "./business.json",
+    "title": "Responsive Websites",
+    "description": "I can do a responsive website for your with a beautiful desing...",
+    "technologies": [
+      {
+        "html": "I map the work with what you necessity",
+        "css": "We need to keep a strategy to your brand"
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "1",
+    "image": "./development.json",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": "I map the work with what you necessity",
+        "css": "We need to keep a strategy to your brand",
+        "js": "We need to keep a strategy to your brand"
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "0",
+    "image": "/images/deadline_steps.svg.png",
+    "title": "Project She Codes",
+    "description": "Project She Codes is the first...",
+    "technologies": [
+      {
+        "html": "",
+        "css": ""
+      }
+    ],
+    "icons": [
+      {
+        "browser": "",
+        "github": ""
+      }
+    ]
+  }
+]

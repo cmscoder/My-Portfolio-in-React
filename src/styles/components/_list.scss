@@ -1,47 +1,129 @@
-.list-header {
-  background: $off-white;
-  border: 1px solid darken($off-white, 7%);
-  color: $grey;
+// .list-header {
+//   background: $off-white;
+//   border: 1px solid darken($off-white, 7%);
+//   color: $grey;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: $s-size $m-size;
+// }
+// .list-body {
+//   margin-bottom: $m-size;
+//   @media (min-width: $desktop-breakpoint) {
+//     margin-bottom: $l-size;
+//   }
+// }
+.list-title {
+  color: white;
   display: flex;
-  justify-content: space-between;
-  padding: $s-size $m-size;
+  justify-content: center;
+  padding-bottom: $l-size;
 }
-.list-body {
-  margin-bottom: $m-size;
-  @media (min-width: $desktop-breakpoint) {
-    margin-bottom: $l-size;
-  }
-}
-
 .list-item {
   border: 1px solid darken($off-white, 7%);
-  border-top: none;
-  color: $dark-grey;
+  border-radius: 10px;
+  color: $off-white;
   display: flex;
   flex-direction: column;
-  padding: $s-size;
+  margin-bottom: 1.5rem;
   text-decoration: none;
   transition: background 0.3s ease;
-  &:hover {
-    background: $off-white;
-  }
-  @media (min-width: $desktop-breakpoint) {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: $m-size;
-  }
+  // &:hover {
+  //   background: $off-white;
+  // }
+  // @media (min-width: $desktop-breakpoint) {
+  //   align-items: center;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   padding: $m-size;
+  // }
+  // @extend %col-md-6;
 }
 
-.list-item--message {
+.list-item img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+  height: 26rem;
+}
+
+.list-item footer {
+  padding: 1.5rem 2rem;
+}
+
+.list-item p {
+  margin-bottom: 1.25rem;
+  color: $off-white;
+}
+
+.list-info {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: $grey;
+  margin-bottom: 1.5rem;
+}
+
+.list-info h4 {
+  margin-bottom: 0;
+}
+
+.devicon-react-original.colored,
+.devicon-react-original-wordmark.colored,
+.devicon-react-plain.colored,
+.devicon-react-plain-wordmark.colored {
+  color: #61dafb;
+  font-size: 2.8rem;
+}
+
+.devicon-css3-plain.colored,
+.devicon-css3-plain-wordmark.colored {
+  font-size: 2.8rem;
+}
+
+.devicon-javascript-plain.colored {
+  font-size: 2.8rem;
+}
+
+[class^="devicon-"],
+[class*=" devicon-"] {
+  font-size: $l-size;
+  margin-right: $s-size;
+}
+
+.list-info--content {
+  align-items: center;
+  color: $off-white;
   justify-content: center;
   padding: $m-size;
   &:hover {
     background: none;
   }
 }
+
+.list-info__icons {
+  float: right;
+}
+
+.list-columns {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 0.75rem;
+}
+
+// @media (min-width: 576px) {
+//   .list-columns {
+//     -moz-column-count: 3;
+//     column-count: 3;
+//     -moz-column-gap: 1.25rem;
+//     column-gap: 1.25rem;
+//     orphans: 1;
+//     widows: 1;
+//   }
+//   .list-columns {
+//     display: inline-block;
+//     width: 100%;
+//   }
+// }
 
 .list-item__title {
   margin: 0;
