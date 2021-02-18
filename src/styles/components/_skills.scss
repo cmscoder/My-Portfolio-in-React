@@ -1,0 +1,27 @@
+.skills {
+  text-align: center;
+}
+
+.skills-icon {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.7;
+  margin: 0.3rem;
+  display: inline-block;
+  min-width: 180px;
+  transition: 0.3s ease;
+}
+
+.icon-content {
+  font-size: 4.5rem !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  text-align: center;
+}
+
+.icon-font {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+}

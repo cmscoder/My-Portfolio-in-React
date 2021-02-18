@@ -15,17 +15,17 @@
 .nav-links {
   display: flex;
   align-items: center;
-  color: $off-white;
+  color: #c7c9cc;
 }
 .nav-links a {
-  color: $off-white;
+  color: #c7c9cc;
   text-transform: capitalize;
   display: inline-block;
   font-weight: bold;
   margin-right: 0.5rem;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   padding: $m-size;
   transition: $mainTransition;
 }

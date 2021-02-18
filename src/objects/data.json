@@ -1,74 +1,77 @@
 [
   {
     "id": 1,
-    "image": "/images/compete-img.png",
-    "title": "Project She Codes",
-    "description": "Project She Codes is the first...",
-    "technologies": [
-      {
-        "html": ""
-      }
-    ],
-    "icons": [
-      {
-        "browser": "",
-        "github": ""
-      }
-    ]
+    "image": "/images/mounit-img.png",
+    "title": "Project Mounit",
+    "html": "",
+    "css": "",
+    "js": "",
+    "bootstrap": "",
+    "browser": "",
+    "github": ""
   },
   {
     "id": 2,
-    "image": "/images/cocktail-img.png",
-    "title": "Project She Codes",
-    "description": "Project She Codes is the first...",
-    "technologies": [
-      {
-        "html": "",
-        "css": "",
-        "js": ""
-      }
-    ],
-    "icons": [
-      {
-        "browser": "",
-        "github": ""
-      }
-    ]
+    "image": "/images/expensify-img.png",
+    "title": "Project Expensify",
+    "html": "",
+    "css": "",
+    "js": "",
+    "browser": "",
+    "github": ""
   },
   {
     "id": 3,
-    "image": "/images/mounit-img.png",
-    "title": "Project She Codes",
-    "description": "Project She Codes is the first...",
-    "technologies": [
-      {
-        "html": "",
-        "css": ""
-      }
-    ],
-    "icons": [
-      {
-        "browser": "",
-        "github": ""
-      }
-    ]
+    "image": "/images/cocktail-img.png",
+    "title": "Project Cocktails",
+    "html": "",
+    "css": "",
+    "js": "",
+    "browser": "",
+    "github": ""
   },
   {
     "id": 4,
+    "image": "/images/tours-img.png",
+    "title": "Project Tours",
+    "html": "",
+    "css": "",
+    "js": "",
+    "bootstrap": "",
+    "browser": "",
+    "github": ""
+  },
+  {
+    "id": 5,
+    "image": "/images/compete-img.png",
+    "title": "Project Compete - Le Wagon",
+    "html": "",
+    "css": "",
+    "js": "",
+    "bootstrap": "",
+    "browser": "",
+    "github": ""
+  },
+  {
+    "id": 6,
     "image": "/images/sunshine-img.png",
-    "title": "Project She Codes",
-    "description": "Project She Codes is the first...",
-    "technologies": [
-      {
-        "html": "",
-        "css": ""
-      }
-    ],
-    "icons": [
-      {
-        "browser": "",
-        "github": ""
-      }
-    ]
+    "title": "Project Sunshine - Le Wagon",
+    "html": "",
+    "css": "",
+    "js": "",
+    "bootstrap": "",
+    "browser": "",
+    "github": ""
+  },
+  {
+    "id": 7,
+    "image": "/images/shecodes-img.png",
+    "title": "Project Brazilian Food - She Codes",
+    "html": "",
+    "css": "",
+    "js": "",
+    "bootstrap": "",
+    "browser": "",
+    "github": ""
   }
 ]

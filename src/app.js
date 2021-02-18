@@ -4,7 +4,6 @@ import AppRouter from "./routers/AppRouter";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import LoadingPage from "./components/LoadingPage";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "aos/dist/aos.css";
 import Lottie from "react-lottie";

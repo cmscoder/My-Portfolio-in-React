@@ -18,6 +18,7 @@ const Portfolio = () => {
       <div className="content-container">
         <h1 className="list-title">Portfolio with projects</h1>
         {Data.map((post, id) => {
+          const bootstrap = post.bootstrap;
           return (
             <div key={id} className="list-columns">
               <article className="list-item">
@@ -27,21 +28,28 @@ const Portfolio = () => {
                     <div className="list-item__title">
                       <h4>{post.title}</h4>
                     </div>
-                    {post.technologies.map((technologie, id) => {
-                      return (
-                        <div key={id} className="tour-price">
-                          <i className="devicon-react-original-wordmark colored">
-                            {technologie.html}
-                          </i>
-                          <i className="devicon-css3-plain-wordmark colored">
-                            {technologie.css}
-                          </i>
-                          <i className="devicon-javascript-plain colored">
-                            {technologie.js}
-                          </i>
-                        </div>
-                      );
-                    })}
+                    <div className="tour-price">
+                      <i className="devicon-html5-plain-wordmark colored">
+                        {post.html}
+                      </i>
+                      <i className="devicon-css3-plain-wordmark colored">
+                        {post.css}
+                      </i>
+                      <i className="devicon-javascript-plain colored">
+                        {post.js}
+                      </i>
+                      {bootstrap ? (
+                        <i className="devicon-bootstrap-plain-wordmark colored">
+                          {post.bootstrap}
+                        </i>
+                      ) : (
+                        ""
+                      )}
+
+                      <i className="devicon-bootstrap-plain-wordmark colored">
+                        {post.bootstrap}
+                      </i>
+                    </div>
                   </div>
                   <div className="list-info--content">
                     <h3>{post.description}</h3>
@@ -49,15 +57,10 @@ const Portfolio = () => {
                   <button onClick={handleShowModal}>More details</button>
                   {showModal && <Modal closeModal={closeModal} />}
                   <div className="list-info__icons">
-                    {post.icons.map((icon, id) => {
-                      return (
-                        <div key={id} className="tour-price">
-                          <i class="devicon-chrome-plain">{icon.browser}</i>
-
-                          <i class="devicon-github-original">{icon.github}</i>
-                        </div>
-                      );
-                    })}
+                    <div className="tour-price">
+                      <i className="devicon-chrome-plain">{post.browser}</i>
+                      <i className="devicon-github-original">{post.github}</i>
+                    </div>
                   </div>
                 </footer>
               </article>
