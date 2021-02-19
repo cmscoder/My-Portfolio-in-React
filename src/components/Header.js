@@ -16,22 +16,24 @@ const Header = () => {
   return (
     <header>
       <div className="header">
-        <div className="header__content">
-          <div>
-            <Lottie
-              src="../objects/about.json"
-              alt="title"
-              options={defaultOptions}
-              height={470}
-              width={600}
-            />
-          </div>
-          <div className="header__title">
-            <h1>
-              Camila Silva
-              <br />
-            </h1>
-            <p>Web Developer</p>
+        <div className="content-container">
+          <div className="header__content">
+            <div>
+              <Lottie
+                src="../objects/about.json"
+                alt="title"
+                options={defaultOptions}
+                height={470}
+                width={600}
+              />
+            </div>
+            <div className="header__title">
+              <h1>
+                Camila Silva
+                <br />
+              </h1>
+              <p>Web Developer</p>
+            </div>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ const Projects = () => {
         </div>
       </div>
       <Link to="/portfolio">
-        <button>Portfolio</button>
+        <button className="button">Portfolio</button>
       </Link>
     </div>
   );

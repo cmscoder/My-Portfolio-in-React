@@ -18,7 +18,7 @@ const Portfolio = () => {
       <div className="content-container">
         <h1 className="list-title">Portfolio with projects</h1>
         {Data.map((post, id) => {
-          const bootstrap = post.bootstrap;
+          // const bootstrap = "bootstrap";
           return (
             <div key={id} className="list-columns">
               <article className="list-item">
@@ -38,24 +38,25 @@ const Portfolio = () => {
                       <i className="devicon-javascript-plain colored">
                         {post.js}
                       </i>
-                      {bootstrap ? (
+                      {"bootstrap" in post ? (
                         <i className="devicon-bootstrap-plain-wordmark colored">
                           {post.bootstrap}
                         </i>
                       ) : (
                         ""
                       )}
-
-                      <i className="devicon-bootstrap-plain-wordmark colored">
-                        {post.bootstrap}
-                      </i>
                     </div>
                   </div>
                   <div className="list-info--content">
                     <h3>{post.description}</h3>
                   </div>
-                  <button onClick={handleShowModal}>More details</button>
-                  {showModal && <Modal closeModal={closeModal} />}
+                  <button className="button" onClick={handleShowModal}>
+                    More details
+                  </button>
+
+                  {showModal && (
+                    <Modal closeModal={closeModal} title={post.title} />
+                  )}
                   <div className="list-info__icons">
                     <div className="tour-price">
                       <i className="devicon-chrome-plain">{post.browser}</i>

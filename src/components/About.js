@@ -4,7 +4,7 @@ import AOS from "aos";
 const About = () => {
   return (
     <div className="about-section" data-aos="fade-down">
-      <h1 className="about-title">ABOUT</h1>
+      <h1 className="about-title">ABOUT ME</h1>
 
       <div className="content-container">
         <div className="about__content">

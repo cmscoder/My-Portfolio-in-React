@@ -6,7 +6,17 @@ $dark-blue: #364051;
 $off-white: #f7f7f7;
 $primaryColor: #476a2e;
 $transparentColor: #00000000;
+$matteWhite: #c7c9cc;
 $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$starWine: linear-gradient(
+  to right,
+  #b8cbb8 0%,
+  #b8cbb8 0%,
+  #b465da 0%,
+  #cf6cc9 33%,
+  #ee609c 66%,
+  #ee609c 100%
+);
 // Font Size
 $font-size-large: 4rem;
 $font-size-medium: 2rem;

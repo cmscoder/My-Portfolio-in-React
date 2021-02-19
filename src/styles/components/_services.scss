@@ -9,7 +9,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  color: white;
+  color: $matteWhite;
   padding-bottom: $m-size;
 }
 
@@ -20,7 +20,7 @@
   padding: $m-size;
   text-align: justify;
   letter-spacing: 1.2;
-  color: white;
+  color: $matteWhite;
   margin: 0 auto;
   padding: 0 1.6rem;
   max-width: 135rem;
@@ -34,4 +34,9 @@
 }
 .services-img {
   margin-right: 20rem;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 2em;
+  color: #57b894;
 }

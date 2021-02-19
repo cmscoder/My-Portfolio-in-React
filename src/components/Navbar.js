@@ -11,8 +11,9 @@ const Navbar = () => (
   <nav className="navbar">
     <div className="nav-center">
       <NavLink to="/">
-        <div className="nav-links">C {faCodeIcon} S</div>
+        <div className="nav-brand">C{faCodeIcon}S</div>
       </NavLink>
+
       <ul className="nav-links">
         <li>
           <NavLink to="/about">about</NavLink>

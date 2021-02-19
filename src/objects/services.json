@@ -2,31 +2,28 @@
   {
     "id": 1,
     "image": "/images/undraw_multitasking_hqg3.png",
-    "title": "Responsive Websites",
-    "check1": "I can do a responsive website for your with a beautiful desing...",
-    "check2": "I map the work with what you necessity",
-    "check3": "We need to keep a strategy to your brand",
-    "check4": "",
-    "check5": ""
+    "title": "First Contact",
+    "check1": "We can schedule a meeting and know each other. We can speak in Portuguese, English or Spanish",
+    "check2": "I'll need to know about your goals, business and brand",
+    "check3": "After our chat, I'll define a budget with all expenses discrimined kind of price of Webserver, images, designer (if you want hire a freelance designer) and other things if applicable",
+    "check4": "I will define a deadline according to work lenght and complexity",
+    "check5": "At normal times (without COVID-19), I can go until you (with the expenses inside budget like fuel, fligth ticket or general transport)"
   },
   {
     "id": 2,
     "image": "/images/deadline_steps.png",
-    "title": "Project She Codes",
-    "check1": "I can do a responsive website for your with a beautiful desing...",
-    "check2": "I map the work with what you necessity",
-    "check3": "We need to keep a strategy to your brand",
-    "check4": "",
-    "check5": ""
+    "title": "Maping and tracking the work",
+    "check1": "I'll map the website through mind map and show you the structure before the beggining work",
+    "check2": "I can make the screens in figma to give you a notion about the design or we can hire a freelance designer;",
+    "check3": "You can follow the deadline through Asana tool and we can match week meetings;"
   },
   {
     "id": 3,
-    "image": "/images/compete-img.png",
-    "title": "Project She Codes",
-    "check1": "I can do a responsive website for your with a beautiful desing...",
-    "check2": "I map the work with what you necessity",
-    "check3": "We need to keep a strategy to your brand",
-    "check4": "",
-    "check5": ""
+    "image": "/images/web-devices.png",
+    "title": "Responsive Websites",
+    "check1": "After everything is ok, I will deliver you the website responsive in all devices",
+    "check2": "You'll need a server and we can choose the best for your necessities",
+    "check3": "We need to keep a strategy to your business and apply SEO(Search Engine Optimization)",
+    "check4": "I'll really appreciate to going on further with you, so, I'll available to continue doing the maintenance of your website when necessary."
   }
 ]

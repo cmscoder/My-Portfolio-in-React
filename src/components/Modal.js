@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Portfolio from "../pages/Portfolio";
-import Modals from "../objects/modals.json";
+import Data from "../objects/data.json";
 
-const Modal = ({ closeModal }) => {
+const Modal = ({ closeModal, title }) => {
   let modalRef = null;
 
   const handleClose = (e) => {
@@ -20,18 +20,14 @@ const Modal = ({ closeModal }) => {
 
   return (
     <div className="modal">
-      {Modals.map((modal, id) => {
-        return (
-          <div key={id} className="modal-box" ref={(node) => (modalRef = node)}>
-            <div>
-              <h3>{modal.title}</h3>
-              <button onClick={closeModal} className="button">
-                Close
-              </button>
-            </div>
-          </div>
-        );
-      })}
+      <div className="modal-box" ref={(node) => (modalRef = node)}>
+        <div>
+          <h3>{title}</h3>
+          <button onClick={closeModal} className="button">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

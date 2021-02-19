@@ -13,7 +13,7 @@
 //   }
 // }
 .list-title {
-  color: white;
+  color: $matteWhite;
   display: flex;
   justify-content: center;
   padding-bottom: $l-size;
@@ -91,7 +91,7 @@
 
 .list-info--content {
   align-items: center;
-  color: $off-white;
+  color: $matteWhite;
   justify-content: center;
   padding: $m-size;
   &:hover {

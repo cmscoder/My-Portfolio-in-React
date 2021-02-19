@@ -6,6 +6,34 @@
   right: $l-size;
   left: $l-size;
 }
+
+.nav-brand {
+  background-image: url(https://media.giphy.com/media/n3xSURtNE62t2/giphy.gif);
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  font-family: "Raleway", sans-serif;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.svg-inline--fa.fa-w-20 {
+  width: 0.75em !important;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  color: white;
+  opacity: 0.7;
+}
 .nav-center {
   display: flex;
   justify-content: space-between;
@@ -15,10 +43,11 @@
 .nav-links {
   display: flex;
   align-items: center;
-  color: #c7c9cc;
+  color: $matteWhite;
+  font-family: "Montserrat";
 }
 .nav-links a {
-  color: #c7c9cc;
+  color: $matteWhite;
   text-transform: capitalize;
   display: inline-block;
   font-weight: bold;
@@ -30,7 +59,8 @@
   transition: $mainTransition;
 }
 .nav-links a:hover {
-  color: $primaryColor;
+  color: #bb5d8c;
+  text-decoration: underline;
 }
 .logo {
   width: 12rem;

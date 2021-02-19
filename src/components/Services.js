@@ -26,7 +26,17 @@ const Services = () => {
         return (
           <div className="section-padding" key={id}>
             <div className="about__content">
-              <article className="services__content">
+              <article
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="services__content"
+              >
                 <div className="services-img">
                   <img src={post.image} alt="" />
                 </div>
@@ -47,6 +57,14 @@ const Services = () => {
                       <p>
                         <FontAwesomeIcon icon={faCheck} />
                         {post.check3}
+                      </p>
+                      <p>
+                        {post.check4 ? <FontAwesomeIcon icon={faCheck} /> : ""}
+                        {post.check4}
+                      </p>
+                      <p>
+                        {post.check5 ? <FontAwesomeIcon icon={faCheck} /> : ""}
+                        {post.check5}
                       </p>
                     </div>
                   </div>
