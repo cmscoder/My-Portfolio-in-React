@@ -7,6 +7,7 @@ import AOS from "aos";
 const Services = () => {
   return (
     <div
+      id="services-section"
       className="section-padding"
       data-aos="fade-down"
       data-aos-offset="200"
@@ -24,13 +25,13 @@ const Services = () => {
 
       {services.map((post, id) => {
         return (
-          <div className="section-padding" key={id}>
-            <div className="about__content">
+          <div className="section" key={id}>
+            <div className="services__content">
               <article
                 data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-delay="50"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"

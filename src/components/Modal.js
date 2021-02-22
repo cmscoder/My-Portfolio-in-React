@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Portfolio from "../pages/Portfolio";
 import Data from "../objects/data.json";
 
-const Modal = ({ closeModal, title }) => {
+const Modal = ({ closeModal, title, description }) => {
   let modalRef = null;
 
   const handleClose = (e) => {
@@ -23,6 +23,10 @@ const Modal = ({ closeModal, title }) => {
       <div className="modal-box" ref={(node) => (modalRef = node)}>
         <div>
           <h3>{title}</h3>
+          <div className="modal__description">{description}</div>
+        </div>
+
+        <div className="modal__button">
           <button onClick={closeModal} className="button">
             Close
           </button>

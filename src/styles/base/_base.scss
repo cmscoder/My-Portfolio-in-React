@@ -4,9 +4,11 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
@@ -14,7 +16,8 @@ body {
   // background: linear-gradient(to right, #eb5757, #000000);
   background: #000918;
 }
-button {
+button,
+nav {
   cursor: pointer;
 }
 button:disabled {
@@ -29,6 +32,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: $off-white;
 }
 img {
   width: 100%;

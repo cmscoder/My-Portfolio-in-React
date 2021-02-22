@@ -1,77 +1,97 @@
 [
   {
     "id": 1,
+    "type": "1",
     "image": "/images/mounit-img.png",
     "title": "Project Mounit",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "bootstrap": "",
     "browser": "",
-    "github": ""
+    "urlproject": "http://mounit.herokuapp.com/"
   },
   {
     "id": 2,
+    "type": "",
     "image": "/images/expensify-img.png",
     "title": "Project Expensify",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "browser": "",
-    "github": ""
+    "github": "",
+    "urlproject": "https://expensify-app-project-react.herokuapp.com/",
+    "urlgithub": ""
   },
   {
     "id": 3,
     "image": "/images/cocktail-img.png",
     "title": "Project Cocktails",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "browser": "",
-    "github": ""
+    "github": "",
+    "urlproject": "https://cocktails-camila-react.netlify.app/",
+    "urlgithub": ""
   },
   {
     "id": 4,
     "image": "/images/tours-img.png",
     "title": "Project Tours",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "bootstrap": "",
     "browser": "",
-    "github": ""
+    "github": "",
+    "urlproject": "https://tour-react-project.netlify.app/",
+    "urlgithub": ""
   },
   {
     "id": 5,
     "image": "/images/compete-img.png",
     "title": "Project Compete - Le Wagon",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "bootstrap": "",
     "browser": "",
-    "github": ""
+    "github": "",
+    "urlproject": "http://www.competeapp.io/",
+    "urlgithub": ""
   },
   {
     "id": 6,
     "image": "/images/sunshine-img.png",
     "title": "Project Sunshine - Le Wagon",
+    "description": "This is a project to a client in ....",
     "html": "",
     "css": "",
     "js": "",
     "bootstrap": "",
     "browser": "",
-    "github": ""
+    "github": "",
+    "urlproject": "https://airbnb-pedrofontes30.herokuapp.com/",
+    "urlgithub": ""
   },
   {
     "id": 7,
     "image": "/images/shecodes-img.png",
     "title": "Project Brazilian Food - She Codes",
+    "description": "This is a project for workshop She Codes ....",
     "html": "",
     "css": "",
     "js": "",
     "bootstrap": "",
     "browser": "",
-    "github": ""
+    "urlproject": "https://www.shecodes.io/workshops/shecodes-lisbon-31/projects/7967",
+    "urlgithub": ""
   }
 ]

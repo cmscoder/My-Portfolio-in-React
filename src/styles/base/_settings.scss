@@ -18,9 +18,10 @@ $starWine: linear-gradient(
   #ee609c 100%
 );
 // Font Size
-$font-size-large: 4rem;
-$font-size-medium: 2rem;
-$font-size-small: 1.4rem;
+$font-size-large: 6rem;
+$font-size-medium: 4rem;
+$font-size-small: 1.18rem;
+
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
@@ -30,7 +31,10 @@ $xl-size: 10.8rem;
   flex: 0 0 50%;
   max-width: 50%;
 }
-$desktop-breakpoint: 45rem;
+$mobile: 36rem;
+$tablet-portrait: 48rem;
+$tablet-landscape: 62rem;
+$desktop-breakpoint: 75rem;
 
 $smallWidth: 85vw;
 $fullWidth: 1170px;

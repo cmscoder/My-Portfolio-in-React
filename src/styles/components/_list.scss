@@ -16,7 +16,6 @@
   color: $matteWhite;
   display: flex;
   justify-content: center;
-  padding-bottom: $l-size;
 }
 .list-item {
   border: 1px solid darken($off-white, 7%);
@@ -43,11 +42,12 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
-  height: 26rem;
+  height: 52rem;
 }
 
 .list-item footer {
   padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .list-item p {
@@ -66,9 +66,9 @@
   margin-bottom: 0;
 }
 
-.devicon-react-original.colored,
-.devicon-react-original-wordmark.colored,
-.devicon-react-plain.colored,
+.devicon-html5-plain.colored,
+.devicon-css3-plain.colored,
+.devicon-css3-plain.colored,
 .devicon-react-plain-wordmark.colored {
   color: #61dafb;
   font-size: 2.8rem;
@@ -101,11 +101,30 @@
 
 .list-info__icons {
   float: right;
+  li {
+    display: inline;
+  }
+}
+
+.list-icons {
+  background: red;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.7;
+  margin: 1.3rem;
+  display: inline-block;
+  min-width: 180px;
+  transition: 0.3s ease;
+}
+.list-technologies__icons {
+  color: white !important;
+  font-size: 2.8rem;
+  background: $starWine;
 }
 
 .list-columns {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 0 10px;
   margin-bottom: 0.75rem;
 }

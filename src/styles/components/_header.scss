@@ -16,7 +16,7 @@
 }
 .header__title {
   color: white;
-  font-size: $font-size-large;
+  font-size: $font-size-medium;
   margin: 0 0 $m-size 0;
   line-height: 1;
   font-family: "Montserrat";
@@ -39,8 +39,15 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: $font-size-medium;
     line-height: 1;
     margin: 10px 0;
+  }
+  .header__title,
+  h1,
+  p {
+    @media (min-width: $desktop-breakpoint) {
+      font-size: $font-size-large;
+    }
   }
 }

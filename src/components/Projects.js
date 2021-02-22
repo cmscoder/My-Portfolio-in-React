@@ -17,11 +17,12 @@ const Projects = () => {
 
   return (
     <div
-      className="about-section"
+      id="projects-section"
+      className="section"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
@@ -32,18 +33,22 @@ const Projects = () => {
         src="../objects/rocket.icon.json"
         alt="title"
         options={defaultOptions}
-        height={600}
-        width={600}
+        height={500}
+        width={500}
       />
       <div className="content-container">
-        <div className="about__content">
-          <div>These are my projects</div>
-          <div>my about right with text</div>
+        <div className="projects-content">
+          <p>
+            Projects in web development are my pleasure as a professional. Every
+            step in a project is a challenge and the results are an exciting
+            satisfaction =). You can see my professional and learning projects
+            clicking in the button below. I hope that you enjoy it!
+          </p>
         </div>
+        <Link to="/portfolio" className="projects__button">
+          <button className="button">See the Portfolio</button>
+        </Link>
       </div>
-      <Link to="/portfolio">
-        <button className="button">Portfolio</button>
-      </Link>
     </div>
   );
 };

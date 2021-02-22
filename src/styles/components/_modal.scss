@@ -13,18 +13,30 @@
 .modal-box {
   width: 80rem;
   height: 40rem;
-  background-color: #fff;
+  background-color: rgb(7, 7, 7);
   box-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-
   animation-name: grow-box;
   animation-duration: 1s;
   transition-timing-function: ease-in-out;
+}
+
+.modal__button {
+  display: flex;
+  justify-content: center;
+}
+
+.modal__description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: $m-size;
 }
 
 @keyframes grow-box {

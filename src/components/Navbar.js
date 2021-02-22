@@ -1,36 +1,32 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const faCodeIcon = <FontAwesomeIcon icon={faCode} />;
 
-// import logo from "../favicon.png";
-
 const Navbar = () => (
   <nav className="navbar">
     <div className="nav-center">
-      <NavLink to="/">
+      <Link to="home">
         <div className="nav-brand">C{faCodeIcon}S</div>
-      </NavLink>
+      </Link>
 
       <ul className="nav-links">
         <li>
-          <NavLink to="/about">about</NavLink>
+          <Link to="about-section">about</Link>
         </li>
         <li>
-          <NavLink to="/services">services</NavLink>
+          <Link to="services-section">services</Link>
         </li>
         <li>
-          <NavLink to="/projects">projects</NavLink>
+          <Link to="projects-section">projects</Link>
         </li>
         <li>
-          <NavLink to="/skills">skills</NavLink>
+          <Link to="skills-section">skills</Link>
         </li>
         <li>
-          <NavLink to="/contact" href="#contact">
-            contact
-          </NavLink>
+          <Link to="contact-section">contact</Link>
         </li>
       </ul>
     </div>

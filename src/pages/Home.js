@@ -7,7 +7,7 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
 const Home = () => (
-  <div>
+  <div id="home">
     <Header />
     <About />
     <Services />

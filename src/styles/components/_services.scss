@@ -15,7 +15,7 @@
 
 .services__content {
   display: flex;
-  font-size: $font-size-medium;
+  font-size: 2rem;
   justify-content: space-between;
   padding: $m-size;
   text-align: justify;
@@ -33,7 +33,10 @@
   margin-bottom: 0.75rem;
 }
 .services-img {
-  margin-right: 20rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .svg-inline--fa.fa-w-16 {

@@ -19,21 +19,6 @@ const AppRouter = () => (
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/skills">
-          <Skills />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
         <Route path="/portfolio">
           <Portfolio component={Modal} />
         </Route>
