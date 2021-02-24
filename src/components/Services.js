@@ -20,18 +20,18 @@ const Services = () => {
     >
       <h1 className="services-title">SERVICES</h1>
       <div className="services__subtitle">
-        What can I do for you? See the services
+        <h1>How it works?</h1>
       </div>
 
       {services.map((post, id) => {
         return (
-          <div className="section" key={id}>
+          <div className="section-services" key={id}>
             <div className="services__content">
               <article
                 data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-delay="50"
-                data-aos-duration="1500"
+                data-aos-duration="1100"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"

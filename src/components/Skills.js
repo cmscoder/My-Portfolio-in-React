@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import animationData from "../objects/skills.json";
 import Lottie from "react-lottie";
 import AOS from "aos";
@@ -13,27 +13,50 @@ const Skills = () => {
     },
   };
 
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const updateAnimation = () => {
+    setDesktop(window.innerWidth > 1200);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateAnimation);
+    return () => window.removeEventListener("resize", updateAnimation);
+  });
+
   return (
     <div
       id="skills-section"
-      className="section"
+      className="section-skills"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
-      data-aos-duration="1500"
+      data-aos-duration="1100"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-anchor-placement="top-center"
     >
       <h1 className="about-title">SKILLS</h1>
-      <Lottie
-        src="../objects/skills.json"
-        alt="title"
-        options={defaultOptions}
-        height={500}
-        width={500}
-      />
+      <div>
+        {isDesktop ? (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={470}
+            width={500}
+          />
+        ) : (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={230}
+            width={186}
+          />
+        )}
+      </div>
       <div className="content-container">
         <div className="skills__content">
           <p>

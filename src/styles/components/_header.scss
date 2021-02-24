@@ -3,15 +3,17 @@
   background-position: center bottom;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding-top: 18rem;
+  padding-top: 3rem;
 }
 
 .header__content {
   color: $off-white;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .header__title {
@@ -26,8 +28,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 20vh;
   letter-spacing: 1px;
+
+  .lottie {
+    display: grid;
+    grid-template-columns: auto;
+  }
 
   h1,
   p {
@@ -39,7 +46,7 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: $font-size-medium;
+    font-size: 2.5rem;
     line-height: 1;
     margin: 10px 0;
   }
@@ -48,6 +55,60 @@
   p {
     @media (min-width: $desktop-breakpoint) {
       font-size: $font-size-large;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    padding-top: 18rem;
+  }
+
+  .header__content {
+    color: $off-white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .lottie {
+    width: 400px !important;
+    height: 600px !important;
+  }
+  .header__title {
+    color: white;
+    font-size: $font-size-medium;
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+
+    h1,
+    p {
+      background-image: url(https://media.giphy.com/media/n3xSURtNE62t2/giphy.gif);
+      background-size: cover;
+      background-position: center center;
+      color: transparent;
+      font-family: "Montserrat", sans-serif;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      text-transform: uppercase;
+      font-size: $font-size-large;
+      line-height: 1;
+      margin: 10px 0;
     }
   }
 }

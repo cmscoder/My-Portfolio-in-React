@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Portfolio from "../pages/Portfolio";
 import animationData from "../objects/rocket-icon.json";
@@ -15,27 +15,50 @@ const Projects = () => {
     },
   };
 
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const updateAnimation = () => {
+    setDesktop(window.innerWidth > 1200);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateAnimation);
+    return () => window.removeEventListener("resize", updateAnimation);
+  });
+
   return (
     <div
       id="projects-section"
-      className="section"
+      className="projects-section"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
-      data-aos-duration="1500"
+      data-aos-duration="1100"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-anchor-placement="top-center"
     >
       <h1 className="about-title">PROJECTS</h1>
-      <Lottie
-        src="../objects/rocket.icon.json"
-        alt="title"
-        options={defaultOptions}
-        height={500}
-        width={500}
-      />
+      <div>
+        {isDesktop ? (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={495}
+            width={500}
+          />
+        ) : (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={230}
+            width={186}
+          />
+        )}
+      </div>
       <div className="content-container">
         <div className="projects-content">
           <p>

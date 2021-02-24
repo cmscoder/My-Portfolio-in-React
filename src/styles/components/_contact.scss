@@ -1,0 +1,41 @@
+.contact-section {
+  padding: 3rem;
+  color: white;
+}
+
+.contact-content {
+  color: #c7c9cc;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  padding: 0;
+  text-align: justify;
+}
+
+.contact-content__email {
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .contact-section {
+    padding: 8rem;
+    color: white;
+  }
+
+  .contact-content {
+    color: #c7c9cc;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .contact-content__email {
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -4,7 +4,6 @@ import Modal from "../components/Modal";
 
 const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
-  // const [creatingId, setCreatingId] = useState(-1);
 
   // startCreateEventHandler = (creatingId) => {
   //   setCreatingId(creatingId);
@@ -24,22 +23,23 @@ const Portfolio = () => {
         <h1 className="list-title">Portfolio with projects</h1>
 
         {Data.map((post, id) => {
-          const card = () => {
-            switch (post.id) {
-              case 3:
-                return { width: 610 };
-              case 4:
-                return { width: 610 };
-              case 6:
-                return { width: 610 };
-              case 7:
-                return { width: 610 };
-            }
-          };
+          // const card = () => {
+          //   switch (post.id) {
+          //     case 3:
+          //       return { width: 612 };
+          //     case 4:
+          //       return { width: 612 };
+          //     case 6:
+          //       return { width: 612 };
+          //     case 7:
+          //       return { width: 612 };
+          //   }
+          // };
+          // style={card()} put it in div list-columns
 
           return (
             <div key={id}>
-              <div className="list-columns" style={card()}>
+              <div className="list-columns">
                 <article className="list-item">
                   <img src={post.image} alt={post.title} />
                   <footer>
@@ -66,41 +66,37 @@ const Portfolio = () => {
                         )}
                       </div>
                     </div>
-                    <div className="list-info--content">
-                      <h3>{post.description}</h3>
-                    </div>
-                    <button className="button" onClick={handleShowModal}>
-                      More details
-                    </button>
+                    <div className="list-info--content"></div>
 
                     {showModal && <Modal closeModal={closeModal} {...post} />}
                     <div className="list-info__icons">
-                      <div className="tour-price">
-                        <ul>
-                          <li>
-                            <a href={post.urlproject} target="_blank">
-                              {"browser" in post ? (
-                                <i className="devicon-chrome-plain">
-                                  {post.browser}
-                                </i>
-                              ) : (
-                                ""
-                              )}
-                            </a>
-                          </li>
-                          <li>
-                            <a href={post.urlgithub} target="_blank">
-                              {"github" in post ? (
-                                <i className="devicon-github-original">
-                                  {post.github}
-                                </i>
-                              ) : (
-                                ""
-                              )}
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                      <button className="button" onClick={handleShowModal}>
+                        More details
+                      </button>
+                      <ul>
+                        <li>
+                          <a href={post.urlproject} target="_blank">
+                            {"browser" in post ? (
+                              <i className="devicon-chrome-plain">
+                                {post.browser}
+                              </i>
+                            ) : (
+                              ""
+                            )}
+                          </a>
+                        </li>
+                        <li>
+                          <a href={post.urlgithub} target="_blank">
+                            {"github" in post ? (
+                              <i className="devicon-github-original">
+                                {post.github}
+                              </i>
+                            ) : (
+                              ""
+                            )}
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </footer>
                 </article>

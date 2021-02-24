@@ -3,7 +3,7 @@ import AOS from "aos";
 
 const About = () => {
   return (
-    <div id="about-section" className="section" data-aos="fade-down">
+    <div id="about-section" className="about-section" data-aos="fade-down">
       <h1 className="about-title">ABOUT ME</h1>
 
       <div className="content-container">
@@ -12,7 +12,7 @@ const About = () => {
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="1500"
+            data-aos-duration="1100"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false"

@@ -1,8 +1,14 @@
+.section-services {
+  padding: 3rem;
+  color: white;
+}
+
 .services-title {
   align-items: center;
   display: flex;
   justify-content: center;
   color: white;
+  font-size: 2.8rem;
 }
 
 .services__subtitle {
@@ -11,19 +17,17 @@
   justify-content: center;
   color: $matteWhite;
   padding-bottom: $m-size;
+  font-size: 1.6rem;
 }
 
 .services__content {
   display: flex;
-  font-size: 2rem;
-  justify-content: space-between;
-  padding: $m-size;
+  font-size: 1.6rem;
+  flex-direction: column;
   text-align: justify;
   letter-spacing: 1.2;
   color: $matteWhite;
   margin: 0 auto;
-  padding: 0 1.6rem;
-  max-width: 135rem;
 }
 
 .services-columns {
@@ -33,13 +37,76 @@
   margin-bottom: 0.75rem;
 }
 .services-img {
-  margin-right: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    max-width: 36rem;
+  }
 }
 
 .svg-inline--fa.fa-w-16 {
   width: 2em;
   color: #57b894;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .section-services {
+    padding: 8rem;
+    color: white;
+  }
+  .services-title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .services__subtitle {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: $matteWhite;
+    padding-bottom: $m-size;
+
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+
+  .services__content {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: $m-size;
+    text-align: justify;
+    letter-spacing: 1.2;
+    color: $matteWhite;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 135rem;
+  }
+
+  .services-columns {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 0.75rem;
+  }
+  .services-img {
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .svg-inline--fa.fa-w-16 {
+    width: 2em;
+    color: #57b894;
+  }
 }

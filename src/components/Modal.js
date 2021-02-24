@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Portfolio from "../pages/Portfolio";
 import Data from "../objects/data.json";
 
-const Modal = ({ closeModal, title, description }) => {
+const Modal = ({ closeModal, id, title, description }) => {
   let modalRef = null;
 
   const handleClose = (e) => {
@@ -25,7 +25,6 @@ const Modal = ({ closeModal, title, description }) => {
           <h3>{title}</h3>
           <div className="modal__description">{description}</div>
         </div>
-
         <div className="modal__button">
           <button onClick={closeModal} className="button">
             Close
@@ -35,5 +34,4 @@ const Modal = ({ closeModal, title, description }) => {
     </div>
   );
 };
-
 export default Modal;

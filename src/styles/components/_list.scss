@@ -1,21 +1,11 @@
-// .list-header {
-//   background: $off-white;
-//   border: 1px solid darken($off-white, 7%);
-//   color: $grey;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: $s-size $m-size;
-// }
-// .list-body {
-//   margin-bottom: $m-size;
-//   @media (min-width: $desktop-breakpoint) {
-//     margin-bottom: $l-size;
-//   }
-// }
 .list-title {
   color: $matteWhite;
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  font-size: 1.4em;
 }
 .list-item {
   border: 1px solid darken($off-white, 7%);
@@ -26,27 +16,17 @@
   margin-bottom: 1.5rem;
   text-decoration: none;
   transition: background 0.3s ease;
-  // &:hover {
-  //   background: $off-white;
-  // }
-  // @media (min-width: $desktop-breakpoint) {
-  //   align-items: center;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   padding: $m-size;
-  // }
-  // @extend %col-md-6;
 }
 
 .list-item img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
-  height: 52rem;
+  max-height: 50rem;
 }
 
 .list-item footer {
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.12);
 }
 
@@ -56,14 +36,7 @@
 }
 
 .list-info {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.list-info h4 {
-  margin-bottom: 0;
 }
 
 .devicon-html5-plain.colored,
@@ -86,7 +59,7 @@
 [class^="devicon-"],
 [class*=" devicon-"] {
   font-size: $l-size;
-  margin-right: $s-size;
+  margin-right: 0.75rem;
 }
 
 .list-info--content {
@@ -100,9 +73,12 @@
 }
 
 .list-info__icons {
-  float: right;
-  li {
-    display: inline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
   }
 }
 
@@ -117,36 +93,20 @@
   transition: 0.3s ease;
 }
 .list-technologies__icons {
-  color: white !important;
-  font-size: 2.8rem;
-  background: $starWine;
+  font-size: 2.4rem !important;
 }
 
 .list-columns {
   float: left;
   width: 100%;
-  padding: 0 10px;
+  padding: 0;
   margin-bottom: 0.75rem;
 }
 
-// @media (min-width: 576px) {
-//   .list-columns {
-//     -moz-column-count: 3;
-//     column-count: 3;
-//     -moz-column-gap: 1.25rem;
-//     column-gap: 1.25rem;
-//     orphans: 1;
-//     widows: 1;
-//   }
-//   .list-columns {
-//     display: inline-block;
-//     width: 100%;
-//   }
-// }
-
 .list-item__title {
   margin: 0;
-  word-break: break-all;
+  font-size: 1.6rem;
+  font-family: "Montserrat";
 }
 
 .list-item__subtitle {
@@ -160,5 +120,131 @@
   @media (min-width: $desktop-breakpoint) {
     margin: 0;
     padding-left: $s-size;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .list-title {
+    color: $matteWhite;
+    display: flex;
+    justify-content: center;
+  }
+  .list-item {
+    border: 1px solid darken($off-white, 7%);
+    border-radius: 10px;
+    color: $off-white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  .list-item img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+    max-height: 50rem;
+  }
+
+  .list-item footer {
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .list-item p {
+    margin-bottom: 1.25rem;
+    color: $off-white;
+  }
+
+  .list-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .devicon-html5-plain.colored,
+  .devicon-css3-plain.colored,
+  .devicon-css3-plain.colored,
+  .devicon-react-plain-wordmark.colored {
+    color: #61dafb;
+    font-size: 2.8rem;
+  }
+
+  .devicon-css3-plain.colored,
+  .devicon-css3-plain-wordmark.colored {
+    font-size: 2.8rem;
+  }
+
+  .devicon-javascript-plain.colored {
+    font-size: 2.8rem;
+  }
+
+  [class^="devicon-"],
+  [class*=" devicon-"] {
+    font-size: $l-size;
+    margin-right: $s-size;
+  }
+
+  .list-info--content {
+    align-items: center;
+    color: $matteWhite;
+    justify-content: center;
+    padding: $m-size;
+    &:hover {
+      background: none;
+    }
+  }
+
+  .list-info__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-icons {
+    background: red;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    opacity: 0.7;
+    margin: 1.3rem;
+    display: inline-block;
+    min-width: 180px;
+    transition: 0.3s ease;
+  }
+  .list-technologies__icons {
+    font-size: 3rem !important;
+  }
+
+  .list-columns {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 0.75rem;
+  }
+
+  .list-item__title {
+    margin: 0;
+    word-break: break-all;
+    font-size: 2rem;
+    font-family: "Montserrat";
+  }
+
+  .list-item__subtitle {
+    color: $grey;
+    font-size: $font-size-small;
+  }
+
+  .list-item__data {
+    margin: $s-size 0 0 0;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin: 0;
+      padding-left: $s-size;
+    }
   }
 }

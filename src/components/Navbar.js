@@ -1,36 +1,85 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const faCodeIcon = <FontAwesomeIcon icon={faCode} />;
 
-const Navbar = () => (
-  <nav className="navbar">
-    <div className="nav-center">
-      <Link to="home">
-        <div className="nav-brand">C{faCodeIcon}S</div>
-      </Link>
+const Navbar = () => {
+  const [click, setClick] = useState(false);
 
-      <ul className="nav-links">
-        <li>
-          <Link to="about-section">about</Link>
-        </li>
-        <li>
-          <Link to="services-section">services</Link>
-        </li>
-        <li>
-          <Link to="projects-section">projects</Link>
-        </li>
-        <li>
-          <Link to="skills-section">skills</Link>
-        </li>
-        <li>
-          <Link to="contact-section">contact</Link>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+  const handleClick = () => {
+    setClick(!click);
+  };
+
+  const closeMobileMenu = () => setClick(false);
+  return (
+    <nav className="navbar">
+      <Link to="home" onClick={closeMobileMenu}>
+        <div className="navbar-logo">C{faCodeIcon}S</div>
+      </Link>
+      <div className="nav-center">
+        <div className="menu-icon" onClick={handleClick}>
+          <div>
+            {click ? (
+              <FontAwesomeIcon icon={faTimes} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
+          </div>
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link
+              to="about-section"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              about
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="services-section"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              services
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="projects-section"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="skills-section"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              skills
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="contact-section"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

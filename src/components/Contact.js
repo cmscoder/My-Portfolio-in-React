@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import animationData from "../objects/contact.json";
 import Lottie from "react-lottie";
 import AOS from "aos";
@@ -15,33 +15,56 @@ const Contact = () => {
     },
   };
 
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const updateAnimation = () => {
+    setDesktop(window.innerWidth > 1200);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateAnimation);
+    return () => window.removeEventListener("resize", updateAnimation);
+  });
+
   return (
     <div
       id="contact-section"
-      className="section"
+      className="contact-section"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
-      data-aos-duration="1500"
+      data-aos-duration="1100"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-anchor-placement="top-center"
     >
       <h1 className="about-title">CONTACT</h1>
-      <Lottie
-        src="../objects/rocket.icon.json"
-        alt="title"
-        options={defaultOptions}
-        height={500}
-        width={500}
-      />
+      <div>
+        {isDesktop ? (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={470}
+            width={500}
+          />
+        ) : (
+          <Lottie
+            className="lottie"
+            src="../objects/about.json"
+            alt="title"
+            options={defaultOptions}
+            height={230}
+            width={186}
+          />
+        )}
+      </div>
       <div className="content-container">
-        <div className="">
-          <div className="projects-content">
+        <div className="contact-content">
+          <div>
             Feel free to contact me by email when you need to. Regardless of the
             time zone, I will answer you as soon as possible
-            <div>
+            <div className="contact-content__email">
               <FontAwesomeIcon icon={faEnvelope} />
               Email: camila_m_s@outlook.com
             </div>

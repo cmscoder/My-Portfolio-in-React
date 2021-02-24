@@ -1,16 +1,16 @@
+.projects-section {
+  padding: 3rem;
+  color: white;
+}
+
 .projects-content {
   color: #c7c9cc;
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.6rem;
   justify-content: center;
-  padding: 3rem 26rem 5rem 26rem;
-  text-align: center;
-  p {
-    margin: 0 auto;
-    padding: 2rem;
-    max-width: 81rem;
-  }
+  text-align: justify;
+  padding: 5px 0 10px 0;
   div {
     margin-top: 2rem;
   }
@@ -19,4 +19,34 @@
 .projects__button {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .projects-section {
+    padding: 8rem;
+    color: white;
+  }
+
+  .projects-content {
+    color: #c7c9cc;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 3rem 26rem 5rem 26rem;
+    text-align: center;
+    p {
+      margin: 0 auto;
+      padding: 2rem;
+      max-width: 81rem;
+    }
+    div {
+      margin-top: 2rem;
+    }
+  }
+
+  .projects__button {
+    display: flex;
+    justify-content: center;
+  }
 }
