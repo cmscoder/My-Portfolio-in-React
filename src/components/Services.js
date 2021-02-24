@@ -6,75 +6,84 @@ import AOS from "aos";
 
 const Services = () => {
   return (
-    <div
-      id="services-section"
-      className="section-padding"
-      data-aos="fade-down"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="2000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
-    >
-      <h1 className="services-title">SERVICES</h1>
-      <div className="services__subtitle">
-        <h1>How it works?</h1>
-      </div>
+    <div className="section-padding">
+      <div
+        id="services-section"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <h1 className="services-title">SERVICES</h1>
+        <div className="services__subtitle">
+          <h1>How it works?</h1>
+        </div>
 
-      {services.map((post, id) => {
-        return (
-          <div className="section-services" key={id}>
-            <div className="services__content">
-              <article
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1100"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"
-                className="services__content"
-              >
-                <div className="services-img">
-                  <img src={post.image} alt="" />
-                </div>
-                <div>
-                  <div className="list-title">
-                    <h4>{post.title}</h4>
+        {services.map((post, id) => {
+          return (
+            <div className="section-services" key={id}>
+              <div className="services__content">
+                <article
+                  data-aos="fade-left"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                  className="services__content"
+                >
+                  <div className="services-img">
+                    <img src={post.image} alt="" />
                   </div>
-                  <div className="list-info">
-                    <div className="list-info--content">
-                      <p>
-                        <FontAwesomeIcon icon={faCheck} />
-                        {post.check1}
-                      </p>
-                      <p>
-                        <FontAwesomeIcon icon={faCheck} />
-                        {post.check2}
-                      </p>
-                      <p>
-                        <FontAwesomeIcon icon={faCheck} />
-                        {post.check3}
-                      </p>
-                      <p>
-                        {post.check4 ? <FontAwesomeIcon icon={faCheck} /> : ""}
-                        {post.check4}
-                      </p>
-                      <p>
-                        {post.check5 ? <FontAwesomeIcon icon={faCheck} /> : ""}
-                        {post.check5}
-                      </p>
+                  <div>
+                    <div className="list-title">
+                      <h4>{post.title}</h4>
+                    </div>
+                    <div className="list-info">
+                      <div className="list-info--content">
+                        <p>
+                          <FontAwesomeIcon icon={faCheck} />
+                          {post.check1}
+                        </p>
+                        <p>
+                          <FontAwesomeIcon icon={faCheck} />
+                          {post.check2}
+                        </p>
+                        <p>
+                          <FontAwesomeIcon icon={faCheck} />
+                          {post.check3}
+                        </p>
+                        <p>
+                          {post.check4 ? (
+                            <FontAwesomeIcon icon={faCheck} />
+                          ) : (
+                            ""
+                          )}
+                          {post.check4}
+                        </p>
+                        <p>
+                          {post.check5 ? (
+                            <FontAwesomeIcon icon={faCheck} />
+                          ) : (
+                            ""
+                          )}
+                          {post.check5}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

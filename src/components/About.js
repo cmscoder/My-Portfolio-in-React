@@ -3,7 +3,7 @@ import AOS from "aos";
 
 const About = () => {
   return (
-    <div id="about-section" className="about-section" data-aos="fade-down">
+    <div id="about-section" className="about-section">
       <h1 className="about-title">ABOUT ME</h1>
 
       <div className="content-container">

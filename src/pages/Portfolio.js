@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Data from "../objects/data.json";
+import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
 
 const Portfolio = () => {
