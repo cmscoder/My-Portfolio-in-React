@@ -1,14 +1,23 @@
 .navbar {
   background: $transparentColor;
-  height: 80px;
+  color: white;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 2.2rem;
-  top: $l-size;
-  right: $l-size;
-  left: $l-size;
+  right: 0;
+  left: 0;
+}
+
+.scroll {
+  background: #8e5f96;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-width {
+  margin-top: 20px;
 }
 
 .navbar-logo {
@@ -60,7 +69,6 @@
 }
 
 .nav-links {
-  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
@@ -135,7 +143,15 @@
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: linear-gradient(
+      to right,
+      #b8cbb8 0%,
+      #b8cbb8 0%,
+      #b465da 0%,
+      #cf6cc9 33%,
+      #ee609c 66%,
+      #ee609c 100%
+    );
     border-radius: 0;
   }
 
@@ -176,7 +192,7 @@
 
   .nav-links-mobile:hover {
     background: #fff;
-    color: #1888ff;
+    color: #bb5d8c;
     transition: 250ms;
   }
 }

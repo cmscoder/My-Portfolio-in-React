@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +13,21 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
+
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      document.querySelector(".navbar").className = "navbar scroll";
+    } else {
+      document.querySelector(".navbar").className = "navbar";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const closeMobileMenu = () => setClick(false);
   return (

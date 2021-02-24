@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Data from "../objects/data.json";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
@@ -106,6 +107,11 @@ const Portfolio = () => {
           );
         })}
       </div>
+      <footer>
+        <Link to="/">
+          <button className="projects__button button">Back here</button>
+        </Link>
+      </footer>
     </div>
   );
 };
