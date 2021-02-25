@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Portfolio from "../pages/Portfolio";
 import Data from "../objects/data.json";
 
-const Modal = ({ closeModal, id, title, description }) => {
+const Modal = ({ closeModal, title, description }) => {
   let modalRef = null;
 
   const handleClose = (e) => {

@@ -7,10 +7,6 @@ import Modal from "../components/Modal";
 const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
 
-  // startCreateEventHandler = (creatingId) => {
-  //   setCreatingId(creatingId);
-  // }
-
   const handleShowModal = () => {
     setShowModal(true);
   };
@@ -66,11 +62,39 @@ const Portfolio = () => {
                         ) : (
                           ""
                         )}
+                        {"ruby" in post ? (
+                          <i className="devicon-ruby-plain colored list-technologies__icons">
+                            {post.ruby}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"rails" in post ? (
+                          <i className="devicon-rails-plain colored list-technologies__icons">
+                            {post.rails}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"sass" in post ? (
+                          <i className="devicon-sass-plain colored list-technologies__icons">
+                            {post.sass}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"react" in post ? (
+                          <i className="devicon-react-plain colored list-technologies__icons">
+                            {post.sass}
+                          </i>
+                        ) : (
+                          ""
+                        )}
                       </div>
                     </div>
                     <div className="list-info--content"></div>
 
-                    {showModal && <Modal closeModal={closeModal} {...post} />}
+                    {showModal && <Modal closeModal={closeModal} Data={post} />}
                     <div className="list-info__icons">
                       <button className="button" onClick={handleShowModal}>
                         More details
@@ -106,12 +130,12 @@ const Portfolio = () => {
             </div>
           );
         })}
+        <footer>
+          <Link to="/">
+            <button className=" button">Back here</button>
+          </Link>
+        </footer>
       </div>
-      <footer>
-        <Link to="/">
-          <button className="projects__button button">Back here</button>
-        </Link>
-      </footer>
     </div>
   );
 };
