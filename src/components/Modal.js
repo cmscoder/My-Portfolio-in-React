@@ -4,6 +4,7 @@ import Data from "../objects/data.json";
 
 const Modal = ({ closeModal, title, description }) => {
   let modalRef = null;
+  console.log(title);
 
   const handleClose = (e) => {
     if (modalRef && !modalRef.contains(e.target)) {

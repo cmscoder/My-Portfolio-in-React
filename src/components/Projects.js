@@ -15,9 +15,9 @@ const Projects = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 1200);
+    setDesktop(window.innerWidth > 992);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -62,14 +62,14 @@ const Projects = () => {
         <div className="content-container">
           <div className="projects-content">
             <p>
-              Projects in web development are my pleasure as a professional.
-              Every step in a project is a challenge and the results are an
-              exciting satisfaction =). You can see my professional and learning
-              projects clicking in the button below. I hope that you enjoy it!
+              Web development projects are my pleasure as a professional. Every
+              step in a project is a challenge and the results are an exciting
+              satisfaction =). You can see my professional and learning projects
+              clicking on the button below. I hope you enjoy it!
             </p>
           </div>
           <Link to="/portfolio" className="projects__button">
-            <button className="button">See the Portfolio</button>
+            <button className="button">See my Portfolio</button>
           </Link>
         </div>
       </div>

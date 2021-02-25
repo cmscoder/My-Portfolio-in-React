@@ -22,13 +22,13 @@ const About = () => {
               data-aos="fade-right"
               data-aos-offset="200"
               data-aos-delay="50"
-              data-aos-duration="1100"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
               data-aos-anchor-placement="top-center"
             >
-              <h1>Hello!!</h1>
+              <h1>Hello... Welcome to my Portfolio!</h1>
               <p>
                 What can I tell about me? I am a Web Developer with background
                 in Information Management and many years of experience in
@@ -47,7 +47,8 @@ const About = () => {
                 In my free times, I am a going out person because being with my
                 friends and family is the best time, I love going to the beach
                 to enjoy the summer, but in the winter, I enjoy watching series,
-                movies and reading good books.
+                movies and reading good books. Besides, I really like to travel
+                and get to know different cultures.
               </p>
             </div>
             <div

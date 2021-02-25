@@ -14,9 +14,9 @@ const Header = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 1200);
+    setDesktop(window.innerWidth > 992);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);

@@ -13,9 +13,9 @@ const Skills = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 1200);
+    setDesktop(window.innerWidth > 992);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -60,8 +60,9 @@ const Skills = () => {
         <div className="content-container">
           <div className="skills__content">
             <p>
-              I have been improved my skills through courses and professional
-              work in order to be aware of new technologies and updates.
+              I have been improving my skills through courses and professional
+              work, always concerned with being aware of new technologies and
+              updates.
             </p>
           </div>
         </div>

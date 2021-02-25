@@ -25,7 +25,7 @@
     "browser": "",
     "github": "",
     "urlproject": "https://expensify-app-project-react.herokuapp.com/",
-    "urlgithub": ""
+    "urlgithub": "https://github.com/cmscoder/react-expensify-app"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
     "browser": "",
     "github": "",
     "urlproject": "https://cocktails-camila-react.netlify.app/",
-    "urlgithub": ""
+    "urlgithub": "https://github.com/cmscoder/cocktails-react"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "browser": "",
     "github": "",
     "urlproject": "https://tour-react-project.netlify.app/",
-    "urlgithub": ""
+    "urlgithub": "https://github.com/cmscoder/tours-react"
   },
   {
     "id": 5,
@@ -69,7 +69,7 @@
     "browser": "",
     "github": "",
     "urlproject": "http://www.competeapp.io/",
-    "urlgithub": ""
+    "urlgithub": "https://github.com/pedrofontes30/compete"
   },
   {
     "id": 6,
@@ -85,7 +85,7 @@
     "browser": "",
     "github": "",
     "urlproject": "https://airbnb-pedrofontes30.herokuapp.com/",
-    "urlgithub": ""
+    "urlgithub": "https://github.com/pedrofontes30/airbnb-project"
   },
   {
     "id": 7,
@@ -96,7 +96,6 @@
     "css": "",
     "js": "",
     "browser": "",
-    "urlproject": "https://www.shecodes.io/workshops/shecodes-lisbon-31/projects/7967",
-    "urlgithub": ""
+    "urlproject": "https://www.shecodes.io/workshops/shecodes-lisbon-31/projects/7967"
   }
 ]

@@ -3,27 +3,27 @@
     "id": 1,
     "image": "/images/undraw_multitasking_hqg3.png",
     "title": "First Contact",
-    "check1": "We can schedule a meeting and know each other. We can speak in Portuguese, English or Spanish",
-    "check2": "I'll need to know about your goals, business and brand",
-    "check3": "After our chat, I'll define a budget with all expenses discrimined kind of price of Webserver, images, designer (if you want hire a freelance designer) and other things if applicable",
-    "check4": "I will define a deadline according to work lenght and complexity",
-    "check5": "At normal times (without COVID-19), I can go until you (with the expenses inside budget like fuel, fligth ticket or general transport)"
+    "check1": "We can schedule a meeting to know each other. We can speak in Portuguese, English or Spanish;",
+    "check2": "I'll need to know about your goals, business and brand;",
+    "check3": "After our chat, I'll define a budget with all expenses discriminated kind of price of Web Server,  images, designer (if you want hire a freelance designer) and other things if applicable;",
+    "check4": "I will set a deadline according to the amount of work and complexity",
+    "check5": "In normal times (without COVID-19), I can go until you (with the expenses inside budget like fuel, flight ticket or general transports)"
   },
   {
     "id": 2,
     "image": "/images/deadline_steps.png",
-    "title": "Maping and tracking the work",
-    "check1": "I'll map the website through mind map and show you the structure before the beggining work",
-    "check2": "I can make the screens in figma to give you a notion about the design or we can hire a freelance designer;",
-    "check3": "You can follow the deadline through Asana tool and we can match week meetings;"
+    "title": "Mapping and tracking the work",
+    "check1": "I'll map the website using the Mind Map tool and show you the structure before starting the work;",
+    "check2": "I can design the screens in the Figma tool to give an idea of what the site will look like or we can hire a freelance designer;",
+    "check3": "You can follow the deadline through the Asana tool and we can match weekly meetings to see the progress of the site."
   },
   {
     "id": 3,
     "image": "/images/web-devices.png",
     "title": "Responsive Websites",
-    "check1": "After everything is ok, I will deliver you the website responsive in all devices",
-    "check2": "You'll need a server and we can choose the best for your necessities",
-    "check3": "We need to keep a strategy to your business and apply SEO(Search Engine Optimization)",
-    "check4": "I'll really appreciate to going on further with you, so, I'll available to continue doing the maintenance of your website when necessary."
+    "check1": "After everything is ok, I will deliver to you the responsive website on all devices",
+    "check2": "You'll need a server and we can choose the best one for your necessities",
+    "check3": "We need to keep a strategy to your business website and apply the SEO(Search Engine Optimization)",
+    "check4": "I really appreciate to going on further with you, so I’ll be on hand to continue maintaining your site when needed."
   }
 ]

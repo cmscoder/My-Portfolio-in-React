@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Data from "../objects/data.json";
 import Navbar from "../components/Navbar";
@@ -6,19 +6,21 @@ import Modal from "../components/Modal";
 
 const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
+  const [selectedId, setSelectedId] = useState(null);
 
-  const handleShowModal = () => {
+  const handleShowModal = (id) => {
+    setSelectedId(id);
+    console.log(id);
     setShowModal(true);
   };
 
   const closeModal = () => {
     setShowModal(false);
   };
-
   return (
     <div className="section-portfolio">
       <div className="content-container">
-        <h1 className="list-title">Portfolio with projects</h1>
+        <h1 className="list-title">My projects</h1>
 
         {Data.map((post, id) => {
           // const card = () => {
@@ -36,7 +38,7 @@ const Portfolio = () => {
           // style={card()} put it in div list-columns
 
           return (
-            <div key={id}>
+            <div key={post.id}>
               <div className="list-columns">
                 <article className="list-item">
                   <img src={post.image} alt={post.title} />
@@ -94,9 +96,15 @@ const Portfolio = () => {
                     </div>
                     <div className="list-info--content"></div>
 
-                    {showModal && <Modal closeModal={closeModal} Data={post} />}
+                    {showModal && selectedId && (
+                      <Modal closeModal={closeModal} {...post} />
+                    )}
+
                     <div className="list-info__icons">
-                      <button className="button" onClick={handleShowModal}>
+                      <button
+                        className="button button-details"
+                        onClick={() => handleShowModal(post)}
+                      >
                         More details
                       </button>
                       <ul>

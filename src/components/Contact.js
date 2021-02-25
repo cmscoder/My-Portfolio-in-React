@@ -15,9 +15,9 @@ const Contact = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 1200);
+    setDesktop(window.innerWidth > 992);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -62,8 +62,10 @@ const Contact = () => {
         <div className="content-container">
           <div className="contact-content">
             <div>
-              Feel free to contact me by email when you need to. Regardless of
-              the time zone, I will answer you as soon as possible
+              First of all, Thank you very much for coming until here 😊 I
+              really appreciate your visit and I hope that we can keep contact.
+              So, feel free to contact me by email. Regardless of the time zone,
+              I will answer you as soon as possible. See you soon!
               <div className="contact-content__email">
                 <FontAwesomeIcon icon={faEnvelope} />
                 Email: camila_m_s@outlook.com
