@@ -3,6 +3,14 @@
   color: white;
 }
 
+.projects-title {
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
 .projects-content {
   color: #c7c9cc;
   display: flex;
@@ -21,12 +29,38 @@
   justify-content: center;
 }
 
+@media (min-width: $tablet-portrait) {
+  .projects__container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 50rem;
+  }
+  .projects-content {
+    text-align: center;
+    margin: 2rem;
+    padding-bottom: 0;
+    font-size: 2rem;
+  }
+  .projects-title {
+    font-size: 2rem;
+    margin: 5rem;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .projects-section {
     padding: 8rem;
     color: white;
   }
 
+  .projects__container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 120rem;
+  }
+  .projects-title {
+    font-size: 2rem;
+  }
   .projects-content {
     color: #c7c9cc;
     display: flex;

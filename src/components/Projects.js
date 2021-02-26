@@ -15,9 +15,9 @@ const Projects = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 767);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 992);
+    setDesktop(window.innerWidth > 767);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -33,11 +33,10 @@ const Projects = () => {
         data-aos-delay="50"
         data-aos-duration="1100"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
-        <h1 className="about-title">PROJECTS</h1>
+        <h1 className="projects-title">PROJECTS</h1>
         <div>
           {isDesktop ? (
             <Lottie
@@ -59,7 +58,7 @@ const Projects = () => {
             />
           )}
         </div>
-        <div className="content-container">
+        <div className="projects__container">
           <div className="projects-content">
             <p>
               Web development projects are my pleasure as a professional. Every

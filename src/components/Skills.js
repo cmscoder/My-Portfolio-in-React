@@ -13,9 +13,9 @@ const Skills = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 767);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 992);
+    setDesktop(window.innerWidth > 767);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -31,7 +31,6 @@ const Skills = () => {
         data-aos-delay="50"
         data-aos-duration="1100"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
@@ -57,7 +56,7 @@ const Skills = () => {
             />
           )}
         </div>
-        <div className="content-container">
+        <div className="skills-container">
           <div className="skills__content">
             <p>
               I have been improving my skills through courses and professional

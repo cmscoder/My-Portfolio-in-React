@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  padding-top: 3rem;
 }
 
 .header__content {
@@ -19,6 +19,14 @@
   @media (min-width: $mobile-landscape) {
     flex-direction: inherit;
   }
+  @media (min-width: $tablet-portrait) {
+    flex-direction: column;
+  }
+}
+
+.lottie {
+  display: grid;
+  grid-template-columns: auto;
 }
 .header__title {
   color: white;
@@ -35,11 +43,6 @@
   height: 20vh;
   letter-spacing: 1px;
 
-  .lottie {
-    display: grid;
-    grid-template-columns: auto;
-  }
-
   h1,
   p {
     background-image: url(https://media.giphy.com/media/n3xSURtNE62t2/giphy.gif);
@@ -54,16 +57,38 @@
     line-height: 1;
     margin: 10px 0;
   }
-  .header__title,
-  h1,
-  p {
-    @media (min-width: $desktop-breakpoint) {
-      font-size: $font-size-large;
+}
+
+@media (min-width: $tablet-portrait) {
+  .header__title {
+    h1,
+    p {
+      font-size: 6rem;
     }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .header {
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .lottie {
+    width: 400px !important;
+    height: 600px !important;
+  }
+  .header__title {
+    height: auto;
+
+    h1,
+    p {
+      font-size: 6rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint-larger) {
   .header {
     background-attachment: fixed;
     background-position: center bottom;
@@ -88,7 +113,6 @@
   }
   .header__title {
     color: white;
-    font-size: $font-size-medium;
     margin: 0 0 $m-size 0;
     line-height: 1;
     font-family: "Montserrat";
@@ -110,7 +134,7 @@
       -moz-background-clip: text;
       -webkit-background-clip: text;
       text-transform: uppercase;
-      font-size: $font-size-large;
+      font-size: 6rem;
       line-height: 1;
       margin: 10px 0;
     }

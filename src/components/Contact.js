@@ -15,9 +15,9 @@ const Contact = () => {
     },
   };
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 992);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 767);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 992);
+    setDesktop(window.innerWidth > 767);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);
@@ -31,9 +31,8 @@ const Contact = () => {
         data-aos="fade-down"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1100"
+        data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
@@ -59,7 +58,7 @@ const Contact = () => {
             />
           )}
         </div>
-        <div className="content-container">
+        <div className="contact-container">
           <div className="contact-content">
             <div>
               First of all, Thank you very much for coming until here 😊 I

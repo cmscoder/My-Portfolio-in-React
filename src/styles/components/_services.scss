@@ -30,6 +30,17 @@
   margin: 0 auto;
 }
 
+.services__list-title {
+  color: #c7c9cc;
+  display: flex;
+  justify-content: center;
+}
+
+.services__list-content {
+  color: #c7c9cc;
+  padding: 1.6rem;
+}
+
 .services-columns {
   float: left;
   width: 50%;
@@ -51,7 +62,20 @@
   color: #57b894;
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $tablet-portrait) {
+  .services__list-title {
+    color: #c7c9cc;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services__list-content {
+    color: #c7c9cc;
+    padding: 1.6rem 14.5rem;
+  }
+}
+
+@media (min-width: $desktop-breakpoint-larger) {
   .section-services {
     padding: 8rem;
     color: white;
@@ -87,6 +111,11 @@
     margin: 0 auto;
     padding: 0 1.6rem;
     max-width: 135rem;
+  }
+
+  .services__list-content {
+    color: #c7c9cc;
+    padding: 1.6rem;
   }
 
   .services-columns {

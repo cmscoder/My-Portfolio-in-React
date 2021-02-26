@@ -1,8 +1,12 @@
 .contact-section {
-  padding: 4rem;
+  padding: 3rem;
   color: white;
 }
-
+.contact-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 120rem;
+}
 .contact-content {
   color: #c7c9cc;
   display: flex;
@@ -18,10 +22,25 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-portrait) {
+  .contact-container {
+    max-width: 46rem;
+  }
+  .contact-content {
+    text-align: center;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .contact-section {
     padding: 8rem;
     color: white;
+  }
+
+  .contact-container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 120rem;
   }
 
   .contact-content {

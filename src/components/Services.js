@@ -12,9 +12,8 @@ const Services = () => {
         data-aos="fade-down"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
@@ -42,11 +41,11 @@ const Services = () => {
                     <img src={post.image} alt="" />
                   </div>
                   <div>
-                    <div className="list-title">
+                    <div className="services__list-title">
                       <h4>{post.title}</h4>
                     </div>
-                    <div className="list-info">
-                      <div className="list-info--content">
+                    <div>
+                      <div className="services__list-content">
                         <p>
                           <FontAwesomeIcon icon={faCheck} />
                           {post.check1}
