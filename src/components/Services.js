@@ -44,7 +44,7 @@ const Services = () => {
                     <div className="services__list-title">
                       <h4>{post.title}</h4>
                     </div>
-                    <div>
+                    <div className="services-container">
                       <div className="services__list-content">
                         <p>
                           <FontAwesomeIcon icon={faCheck} />

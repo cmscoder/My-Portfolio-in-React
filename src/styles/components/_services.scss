@@ -3,6 +3,12 @@
   color: white;
 }
 
+.services-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 40rem;
+}
+
 .services-title {
   align-items: center;
   display: flex;
@@ -69,9 +75,17 @@
     justify-content: center;
   }
 
-  .services__list-content {
-    color: #c7c9cc;
-    padding: 1.6rem 14.5rem;
+  .services-img img {
+    max-width: 60rem;
+  }
+
+  .services__content {
+    font-size: 2rem;
+  }
+  .services-container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 60rem;
   }
 }
 
@@ -85,6 +99,10 @@
     display: flex;
     justify-content: center;
     color: white;
+  }
+
+  .services-container {
+    max-width: none;
   }
 
   .services__subtitle {

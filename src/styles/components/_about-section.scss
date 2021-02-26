@@ -28,6 +28,9 @@
     font-size: 2rem;
     flex-direction: row;
   }
+  @media (min-width: $tablet-portrait) {
+    font-size: 2rem;
+  }
 }
 // .col-md-6 {
 //   @extend %col-md-6;
@@ -40,6 +43,11 @@
   margin: 0 auto;
   align-items: center;
   margin-top: 20px;
+
+  @media (min-width: $tablet-portrait) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
