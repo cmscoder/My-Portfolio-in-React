@@ -33,7 +33,7 @@ const Projects = () => {
         data-aos-delay="50"
         data-aos-duration="1100"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
         <h1 className="projects-title">PROJECTS</h1>

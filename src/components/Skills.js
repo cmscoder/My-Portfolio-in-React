@@ -31,7 +31,7 @@ const Skills = () => {
         data-aos-delay="50"
         data-aos-duration="1100"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
         <h1 className="about-title">SKILLS</h1>
@@ -70,6 +70,7 @@ const Skills = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
+          data-aos-once="true"
         >
           <div className=" skills-icon">
             <i className="icon-content devicon-html5-plain colored "></i>
