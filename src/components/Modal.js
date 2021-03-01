@@ -21,10 +21,10 @@ const Modal = ({ closeModal, info, title, description }) => {
   return (
     <div className="modal">
       <div className="modal-box" ref={(node) => (modalRef = node)}>
-        <div>
+        <div className="modal__title">
           <h3>{info.title}</h3>
-          <div className="modal__description">{info.description}</div>
         </div>
+        <div className="modal__description">{info.description}</div>
         <div className="modal__button">
           <button onClick={closeModal} className="button">
             Close

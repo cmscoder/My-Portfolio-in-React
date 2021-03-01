@@ -8,19 +8,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
 }
 
 .modal-box {
-  width: 90%;
-  height: 70%;
+  width: 98%;
+  height: 90%;
   background-color: rgb(7, 7, 7);
   box-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
-  padding: 15px;
+  padding: 0;
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  justify-content: center;
   animation-name: grow-box;
   animation-duration: 1s;
   transition-timing-function: ease-in-out;
@@ -31,12 +33,19 @@
   justify-content: center;
 }
 
+.modal__title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
 .modal__description {
   display: flex;
   justify-content: center;
   align-content: center;
-  text-align: center;
+  text-align: justify;
   padding: $m-size;
+  color: #c7c9cc;
 }
 
 @keyframes grow-box {
@@ -70,6 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.9rem;
   }
 
   .modal-box {
@@ -77,11 +87,10 @@
     height: 40rem;
     background-color: rgb(7, 7, 7);
     box-shadow: 0 0 15 rgba(0, 0, 0, 0.5);
-    padding: 15px;
     border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     animation-name: grow-box;
     animation-duration: 1s;

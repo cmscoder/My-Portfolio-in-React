@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Data from "../objects/data.json";
 import Navbar from "../components/Navbar";
 import Modal from "../components/Modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
@@ -139,7 +141,10 @@ const Portfolio = () => {
         })}
         <footer>
           <Link to="/">
-            <button className=" button">Back here</button>
+            <button className=" button">
+              <FontAwesomeIcon icon={faBackward} className="icon-color" />
+              Back Home
+            </button>
           </Link>
         </footer>
       </div>
