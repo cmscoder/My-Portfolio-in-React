@@ -6,16 +6,17 @@ import AOS from "aos";
 
 const Services = () => {
   return (
-    <div className="section-padding">
+    <div id="services-section" className="section-services">
       <div>
         <h1 className="services-title">SERVICES</h1>
+
         <div className="services__subtitle">
-          <h1>How it works?</h1>
+          <h2>How it works?</h2>
         </div>
 
         {services.map((post, id) => {
           return (
-            <div className="section-services" key={id}>
+            <div key={id}>
               <div className="services__content">
                 <article
                   data-aos="fade-left"

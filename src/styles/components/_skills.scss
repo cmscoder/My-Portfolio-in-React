@@ -1,5 +1,5 @@
 .section-skills {
-  padding: 3rem;
+  padding: 8rem 2rem;
   color: white;
 }
 
@@ -64,18 +64,22 @@
     font-size: 2rem;
     margin: 2rem;
   }
+  .section-skills {
+    padding: 8rem;
+    color: white;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .section-skills {
-    padding: 8rem;
+    padding: 14rem 8rem;
     color: white;
   }
 
   .skills-container {
     margin: 0 auto;
     padding: 0;
-    max-width: 120rem;
+    max-width: 52rem;
   }
   .skills {
     text-align: center;
@@ -89,7 +93,6 @@
     display: flex;
     font-size: 2rem;
     justify-content: center;
-    padding: 3rem 26rem 5rem 26rem;
     text-align: center;
   }
 

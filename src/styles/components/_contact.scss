@@ -1,11 +1,11 @@
 .contact-section {
-  padding: 3rem;
+  padding: 8rem 2rem;
   color: white;
 }
 .contact-container {
   margin: 0 auto;
   padding: 0;
-  max-width: 120rem;
+  max-width: 52rem;
 }
 .contact-content {
   color: #c7c9cc;
@@ -13,7 +13,7 @@
   font-size: 1.6rem;
   justify-content: center;
   padding: 0;
-  text-align: justify;
+  text-align: center;
 }
 
 .contact-content__email {
@@ -33,7 +33,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .contact-section {
-    padding: 8rem;
+    padding: 14rem 8rem;
     color: white;
   }
 

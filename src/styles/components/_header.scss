@@ -43,6 +43,10 @@
   height: 20vh;
   letter-spacing: 1px;
 
+  @media (min-width: $mobile-landscape) {
+    height: auto;
+  }
+
   h1,
   p {
     background-image: url(https://media.giphy.com/media/n3xSURtNE62t2/giphy.gif);

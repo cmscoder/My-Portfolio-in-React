@@ -10,7 +10,6 @@ const Portfolio = () => {
 
   const handleShowModal = (id) => {
     setSelectedId(id);
-    console.log(id);
     setShowModal(true);
   };
 
@@ -96,8 +95,8 @@ const Portfolio = () => {
                     </div>
                     <div className="list-info--content"></div>
 
-                    {showModal && selectedId && (
-                      <Modal closeModal={closeModal} {...post} />
+                    {showModal && (
+                      <Modal closeModal={closeModal} info={selectedId} />
                     )}
 
                     <div className="list-info__icons">

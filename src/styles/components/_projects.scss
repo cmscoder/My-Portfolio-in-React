@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 3rem;
+  padding: 8rem 2rem;
   color: white;
 }
 
@@ -51,38 +51,38 @@
     font-size: 2rem;
     margin: 5rem;
   }
+  .projects-section {
+    padding: 8rem;
+    color: white;
+  }
+  .projects-section {
+    padding: 8rem;
+    color: white;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .projects-section {
-    padding: 8rem;
+    padding: 14rem 8rem;
     color: white;
   }
 
   .projects__container {
     margin: 0 auto;
     padding: 0;
-    max-width: 120rem;
+    max-width: 52rem;
   }
   .projects-title {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .projects-content {
     color: #c7c9cc;
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    margin: 2rem;
     justify-content: center;
-    padding: 3rem 26rem 1rem 26rem;
     text-align: center;
-    p {
-      margin: 0 auto;
-      padding: 2rem;
-      max-width: 81rem;
-    }
-    div {
-      margin-top: 2rem;
-    }
   }
 
   .projects__button {

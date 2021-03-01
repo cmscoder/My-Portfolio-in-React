@@ -1,5 +1,5 @@
 .section-services {
-  padding: 3rem;
+  padding: 8rem 2rem;
   color: white;
 }
 
@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
 }
 
 .services__subtitle {
@@ -87,11 +87,15 @@
     padding: 0;
     max-width: 60rem;
   }
+  .section-services {
+    padding: 14rem 8rem;
+    color: white;
+  }
 }
 
-@media (min-width: $desktop-breakpoint-larger) {
+@media (min-width: $desktop-breakpoint) {
   .section-services {
-    padding: 8rem;
+    padding: 14rem 8rem;
     color: white;
   }
   .services-title {
@@ -103,6 +107,9 @@
 
   .services-container {
     max-width: none;
+  }
+  .services-title {
+    font-size: 2.8rem;
   }
 
   .services__subtitle {
@@ -127,7 +134,7 @@
     letter-spacing: 1.2;
     color: $matteWhite;
     margin: 0 auto;
-    padding: 0 1.6rem;
+    padding: 2rem 1.6rem;
     max-width: 135rem;
   }
 

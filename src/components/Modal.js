@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import Portfolio from "../pages/Portfolio";
 import Data from "../objects/data.json";
 
-const Modal = ({ closeModal, title, description }) => {
+const Modal = ({ closeModal, info, title, description }) => {
   let modalRef = null;
-  console.log(title);
 
   const handleClose = (e) => {
     if (modalRef && !modalRef.contains(e.target)) {
@@ -23,8 +22,8 @@ const Modal = ({ closeModal, title, description }) => {
     <div className="modal">
       <div className="modal-box" ref={(node) => (modalRef = node)}>
         <div>
-          <h3>{title}</h3>
-          <div className="modal__description">{description}</div>
+          <h3>{info.title}</h3>
+          <div className="modal__description">{info.description}</div>
         </div>
         <div className="modal__button">
           <button onClick={closeModal} className="button">

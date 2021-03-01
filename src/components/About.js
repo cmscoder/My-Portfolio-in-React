@@ -3,9 +3,9 @@ import AOS from "aos";
 import { toISODateString } from "react-dates";
 
 const About = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 960);
   const updateAnimation = () => {
-    setDesktop(window.innerWidth > 768);
+    setDesktop(window.innerWidth > 960);
   };
   useEffect(() => {
     window.addEventListener("resize", updateAnimation);

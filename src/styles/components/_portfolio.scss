@@ -1,5 +1,5 @@
 .section-portfolio {
-  padding: 3rem;
+  padding: 8rem 2rem;
 }
 
 .content-container {
@@ -7,9 +7,9 @@
   padding: 0;
   max-width: 126rem;
 }
-.button-details {
-  display: none;
-}
+// .button-details {
+//   display: none;
+// }
 .devicon-chrome-plain {
   color: white;
 }
@@ -19,11 +19,11 @@
 
 @media (min-width: $desktop-breakpoint) {
   .section-portfolio {
-    padding: 12rem;
+    padding: 14rem 8rem;
   }
-  .button-details {
-    display: none;
-  }
+  // .button-details {
+  //   display: none;
+  // }
   .content-container {
     margin: 0 auto;
     padding: 0 $m-size;
