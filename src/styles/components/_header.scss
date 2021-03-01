@@ -17,7 +17,7 @@
   justify-content: space-between;
 
   @media (min-width: $mobile-landscape) {
-    flex-direction: inherit;
+    flex-direction: row;
   }
   @media (min-width: $tablet-portrait) {
     flex-direction: column;
