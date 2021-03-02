@@ -27,7 +27,6 @@ const Contact = () => {
   return (
     <div className="contact-section">
       <div
-        id="contact-section"
         data-aos="fade-down"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -36,7 +35,9 @@ const Contact = () => {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
-        <h1 className="about-title">CONTACT</h1>
+        <h1 id="contact-section" className="about-title">
+          CONTACT
+        </h1>
         <div>
           {isDesktop ? (
             <Lottie

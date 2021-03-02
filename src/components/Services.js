@@ -7,74 +7,64 @@ import AOS from "aos";
 const Services = () => {
   return (
     <div id="services-section" className="section-services">
-      <div>
-        <h1 className="services-title">SERVICES</h1>
+      <h1 className="services-title">SERVICES</h1>
 
-        <div className="services__subtitle">
-          <h2>How it works?</h2>
-        </div>
-
-        {services.map((post, id) => {
-          return (
-            <div key={id}>
-              <div className="services__content">
-                <article
-                  data-aos="fade-left"
-                  data-aos-offset="200"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-mirror="false"
-                  data-aos-once="true"
-                  data-aos-anchor-placement="top-center"
-                  className="services__content"
-                >
-                  <div className="services-img">
-                    <img src={post.image} alt="" />
-                  </div>
-                  <div>
-                    <div className="services__list-title">
-                      <h4>{post.title}</h4>
-                    </div>
-                    <div className="services">
-                      <div className="services__list-content">
-                        <p>
-                          <FontAwesomeIcon icon={faCheck} />
-                          {post.check1}
-                        </p>
-                        <p>
-                          <FontAwesomeIcon icon={faCheck} />
-                          {post.check2}
-                        </p>
-                        <p>
-                          <FontAwesomeIcon icon={faCheck} />
-                          {post.check3}
-                        </p>
-                        <p>
-                          {post.check4 ? (
-                            <FontAwesomeIcon icon={faCheck} />
-                          ) : (
-                            ""
-                          )}
-                          {post.check4}
-                        </p>
-                        <p>
-                          {post.check5 ? (
-                            <FontAwesomeIcon icon={faCheck} />
-                          ) : (
-                            ""
-                          )}
-                          {post.check5}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          );
-        })}
+      <div className="services__subtitle">
+        <h2>How it works?</h2>
       </div>
+
+      {services.map((post, id) => {
+        return (
+          <div key={id}>
+            <div className="services__content">
+              <article
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+                className="services__content"
+              >
+                <div className="services-img">
+                  <img src={post.image} alt="" />
+                </div>
+                <div>
+                  <div className="services__list-title">
+                    <h4>{post.title}</h4>
+                  </div>
+                  <div className="services">
+                    <div className="services__list-content">
+                      <p>
+                        <FontAwesomeIcon icon={faCheck} />
+                        {post.check1}
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faCheck} />
+                        {post.check2}
+                      </p>
+                      <p>
+                        <FontAwesomeIcon icon={faCheck} />
+                        {post.check3}
+                      </p>
+                      <p>
+                        {post.check4 ? <FontAwesomeIcon icon={faCheck} /> : ""}
+                        {post.check4}
+                      </p>
+                      <p>
+                        {post.check5 ? <FontAwesomeIcon icon={faCheck} /> : ""}
+                        {post.check5}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

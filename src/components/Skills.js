@@ -25,7 +25,6 @@ const Skills = () => {
   return (
     <div className="section-skills">
       <div
-        id="skills-section"
         data-aos="fade-down"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -34,7 +33,9 @@ const Skills = () => {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
-        <h1 className="about-title">SKILLS</h1>
+        <h1 id="skills-section" className="about-title">
+          SKILLS
+        </h1>
         <div>
           {isDesktop ? (
             <Lottie

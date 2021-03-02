@@ -27,7 +27,6 @@ const Projects = () => {
   return (
     <div className="projects-section">
       <div
-        id="projects-section"
         data-aos="fade-down"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -36,7 +35,9 @@ const Projects = () => {
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
       >
-        <h1 className="projects-title">PROJECTS</h1>
+        <h1 id="projects-section" className="projects-title">
+          PROJECTS
+        </h1>
         <div>
           {isDesktop ? (
             <Lottie
