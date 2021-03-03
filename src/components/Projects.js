@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Portfolio from "../pages/Portfolio";
-import animationData from "../objects/rocket-icon.json";
+import animationData from "../objects/projects.json";
 import Lottie from "react-lottie";
 import AOS from "aos";
 
