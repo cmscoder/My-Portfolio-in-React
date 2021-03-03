@@ -29,6 +29,20 @@
   },
   {
     "id": 3,
+    "image": "/images/indecisionapp.png",
+    "title": "Project IndecisionApp",
+    "description": "It’s a project in React with emphasis in add and remove elements in a list. ",
+    "html": "",
+    "sass": "",
+    "js": "",
+    "react": "",
+    "browser": "",
+    "github": "",
+    "urlproject": "https://indecisionapp-camila-inreact.netlify.app/",
+    "urlgithub": "https://github.com/cmscoder/indecision-app-react"
+  },
+  {
+    "id": 4,
     "image": "/images/cocktail-img.png",
     "title": "Project Cocktails",
     "description": "It’s a project in React with emphasis in fetch data from database and do a search when you can find a cocktail searching for the first letters or the entire name. ",
@@ -42,7 +56,7 @@
     "urlgithub": "https://github.com/cmscoder/cocktails-react"
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "/images/tours-img.png",
     "title": "Project Tours",
     "description": "It’s a good practice in React to fetch data from database and to see the condition statement in things like Read more. ",
@@ -56,7 +70,7 @@
     "urlgithub": "https://github.com/cmscoder/tours-react"
   },
   {
-    "id": 5,
+    "id": 6,
     "image": "/images/compete-img.png",
     "title": "Project Compete - Le Wagon",
     "description": "Project with emphasis in a complete web page system, using Rails Framework for the Compete Project. The main goal of the application was to register in competitions of the some sports and affiliations in a unique site and also to do a game where the competitors can see your opponents and their profile page with the important informations. The architecture designer was made for us through Figma, and we used MVC as design pattern, ruby on rails, mapbox, cloudinary and stripe APIs.",
@@ -72,7 +86,7 @@
     "urlgithub": "https://github.com/pedrofontes30/compete"
   },
   {
-    "id": 6,
+    "id": 7,
     "image": "/images/sunshine-img.png",
     "title": "Project Sunshine - Le Wagon",
     "description": "Airbnb Demo project built for me and my team in our bootcamp at Le Wagon in the version of lessons in sports where we did a platform that we can register a lesson as a teacher and buy a lesson as a student. In the Airbnb Demo project I was responsible for: The map through API Mapbox using Javascript; The popup on map using Javascript and ruby; The ratings; Cards and all roles in the index page.",
@@ -88,7 +102,7 @@
     "urlgithub": "https://github.com/pedrofontes30/airbnb-project"
   },
   {
-    "id": 7,
+    "id": 8,
     "image": "/images/shecodes-img.png",
     "title": "Project Brazilian Food - She Codes",
     "description": "Project with emphasis in web development using Javascript. The main goal of the web page was to show informations about a restaurant that have a delivery food. The architecture was based in HTML, CSS and JS.",
