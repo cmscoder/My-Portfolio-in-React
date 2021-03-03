@@ -70,6 +70,22 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
                 Email: camila_m_s@outlook.com
               </div>
+              <div className="footer-contact">
+                <ul>
+                  <li>
+                    <a href="https://github.com/cmscoder" target="_blank">
+                      <i className="devicon-github-original"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/camila-medeiros-silva/"
+                      target="_blank"
+                    >
+                      <i class="devicon-linkedin-plain"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div> © Camila Silva | 2021 </div>
+              </div>
             </div>
           </div>
         </div>
