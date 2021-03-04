@@ -16,13 +16,12 @@ h1 {
   margin-bottom: 1.5rem;
   text-decoration: none;
   transition: background 0.3s ease;
+  height: 100%;
 }
 
 .list-item img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  object-fit: cover;
-  max-height: 50rem;
 }
 
 .list-item footer {
@@ -97,7 +96,6 @@ h1 {
 }
 
 .list-columns {
-  float: left;
   width: 100%;
   padding: 0;
   margin-bottom: 0.75rem;
@@ -138,6 +136,7 @@ h1 {
     margin-bottom: 1.5rem;
     text-decoration: none;
     transition: background 0.3s ease;
+    height: 100%;
   }
 
   h1 {
@@ -146,8 +145,6 @@ h1 {
   .list-item img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    object-fit: cover;
-    max-height: 50rem;
   }
 
   .list-item footer {

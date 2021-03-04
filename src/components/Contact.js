@@ -80,7 +80,7 @@ const Contact = () => {
                       href="https://www.linkedin.com/in/camila-medeiros-silva/"
                       target="_blank"
                     >
-                      <i class="devicon-linkedin-plain"></i>
+                      <i className="devicon-linkedin-plain"></i>
                     </a>
                   </li>
                 </ul>
