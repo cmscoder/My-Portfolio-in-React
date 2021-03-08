@@ -25,19 +25,9 @@ const Projects = () => {
   });
 
   return (
-    <div className="projects-section">
-      <div
-        data-aos="fade-down"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1100"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        data-aos-anchor-placement="top-center"
-      >
-        <h1 id="projects-section" className="projects-title">
-          PROJECTS
-        </h1>
+    <div id="projects-section" className="projects-section">
+      <div data-aos="fade-down">
+        <h1 className="projects-title">PROJECTS</h1>
         <div>
           {isDesktop ? (
             <Lottie

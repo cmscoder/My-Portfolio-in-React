@@ -17,17 +17,7 @@ const Services = () => {
         return (
           <div key={id}>
             <div className="services__content">
-              <article
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-anchor-placement="top-center"
-                className="services__content"
-              >
+              <article data-aos="fade-left" className="services__content">
                 <div className="services-img">
                   <img src={post.image} alt="" />
                 </div>

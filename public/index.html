@@ -26,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
     />
+    <link rel="preload" href="styles.scss" as="style" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -34,7 +35,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: "200",
+        delay: "50",
+        duration: "1000",
+        easing: "ease-in-out",
+        once: "true",
+        placement: "top-center",
+      });
     </script>
   </body>
 </html>

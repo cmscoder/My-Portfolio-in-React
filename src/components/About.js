@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
-import { toISODateString } from "react-dates";
 
 const About = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 960);
+
   const updateAnimation = () => {
     setDesktop(window.innerWidth > 960);
   };
@@ -18,15 +18,7 @@ const About = () => {
       <div className="content-container">
         {isDesktop ? (
           <div className="about__content">
-            <div
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="true"
-              data-aos-anchor-placement="top-center"
-            >
+            <div data-aos="fade-right">
               <h1>Hello... Welcome to my Portfolio!</h1>
               <p>
                 What can I tell about me? I am a Web Developer with background
@@ -50,16 +42,7 @@ const About = () => {
                 and get to know different cultures.
               </p>
             </div>
-            <div
-              className="col-md-6"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="true"
-              data-aos-anchor-placement="top-center"
-            >
+            <div className="col-md-6" data-aos="fade-left">
               <img className="about-img" src="/images/my-photo.jpeg" alt="" />
             </div>
           </div>
@@ -68,15 +51,7 @@ const About = () => {
             <div>
               <img className="about-img" src="/images/my-photo.jpeg" alt="" />
             </div>
-            <div
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="true"
-              data-aos-anchor-placement="top-center"
-            >
+            <div data-aos="fade-right">
               <h1>Hello!!</h1>
               <p>
                 What can I tell about me? I am a Web Developer with background

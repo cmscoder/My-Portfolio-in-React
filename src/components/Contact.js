@@ -25,19 +25,9 @@ const Contact = () => {
   });
 
   return (
-    <div className="contact-section">
-      <div
-        data-aos="fade-down"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-        data-aos-anchor-placement="top-center"
-      >
-        <h1 id="contact-section" className="about-title">
-          CONTACT
-        </h1>
+    <div id="contact-section" className="contact-section">
+      <div data-aos="fade-down">
+        <h1 className="about-title">CONTACT</h1>
         <div>
           {isDesktop ? (
             <Lottie
