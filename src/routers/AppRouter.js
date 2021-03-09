@@ -13,7 +13,6 @@ import Modal from "./../components/Modal";
 
 const AppRouter = () => (
   <BrowserRouter>
-    <Navbar />
     <div>
       <Switch>
         <Route exact path="/">

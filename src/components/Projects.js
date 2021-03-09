@@ -50,6 +50,15 @@ const Projects = () => {
           )}
         </div>
         <div className="projects__container">
+          <div>
+            <a
+              className="lotties-license"
+              href="https://lottiefiles.com/27436-business"
+              target="_blank"
+            >
+              Lime @LottieFiles
+            </a>
+          </div>
           <div className="projects-content">
             <p>
               Web development projects are my pleasure as a professional. Every

@@ -55,6 +55,15 @@ const Header = () => {
                   width={285}
                 />
               )}
+              <div>
+                <a
+                  className="lotties-license__header"
+                  href="https://lottiefiles.com/26600-under-maintenance-work-in-progress"
+                  target="_blank"
+                >
+                  Illya Pavlov @LottieFiles
+                </a>
+              </div>
             </div>
             <div className="header__title">
               <h1>

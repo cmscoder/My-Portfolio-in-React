@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 
   @media (min-width: $mobile-landscape) {
     flex-direction: row;
@@ -27,6 +28,17 @@
 .lottie {
   display: grid;
   grid-template-columns: auto;
+}
+
+.lotties-license__header {
+  display: flex;
+  justify-content: center;
+  color: #ffffff85;
+  font-size: 10px;
+  position: relative;
+  left: 1rem;
+  top: -6rem;
+  transform: rotate(-30deg);
 }
 .header__title {
   color: white;
@@ -70,6 +82,17 @@
       font-size: 6rem;
     }
   }
+  .lotties-license__header {
+    left: 0rem;
+    top: -9rem !important;
+  }
+}
+
+@media (min-width: $mobile-landscape) {
+  // .lotties-license__header {
+  //   left: 10rem;
+  //   top: 72% !important;
+  // }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -81,6 +104,11 @@
   .lottie {
     width: 400px !important;
     height: 600px !important;
+  }
+
+  .lotties-license__header {
+    left: 0rem;
+    top: -9rem;
   }
   .header__title {
     height: auto;

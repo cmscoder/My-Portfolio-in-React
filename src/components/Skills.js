@@ -48,6 +48,15 @@ const Skills = () => {
           )}
         </div>
         <div className="skills-container">
+          <div>
+            <a
+              className="lotties-license"
+              href="https://lottiefiles.com/26600-under-maintenance-work-in-progress"
+              target="_blank"
+            >
+              Usama Razzaq @LottieFiles
+            </a>
+          </div>
           <div className="skills__content">
             <p>
               I have been improving my skills through courses and professional

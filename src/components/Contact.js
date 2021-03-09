@@ -50,6 +50,15 @@ const Contact = () => {
           )}
         </div>
         <div className="contact-container">
+          <div>
+            <a
+              className="lotties-license"
+              href="https://lottiefiles.com/44123-customer-support-women"
+              target="_blank"
+            >
+              Sheikh Sohel @LottieFiles
+            </a>
+          </div>
           <div className="contact-content">
             <div>
               First of all, Thank you very much for coming until here 😊 I
