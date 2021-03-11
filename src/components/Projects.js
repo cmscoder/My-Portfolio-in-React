@@ -32,7 +32,7 @@ const Projects = () => {
           {isDesktop ? (
             <Lottie
               className="lottie"
-              src="../objects/about.json"
+              src="../objects/projects.json"
               alt="title"
               options={defaultOptions}
               height={495}
@@ -41,7 +41,7 @@ const Projects = () => {
           ) : (
             <Lottie
               className="lottie"
-              src="../objects/about.json"
+              src="../objects/projects.json"
               alt="title"
               options={defaultOptions}
               height={230}

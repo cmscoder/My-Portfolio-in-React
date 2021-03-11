@@ -23,13 +23,7 @@ const Header = () => {
     return () => window.removeEventListener("resize", updateAnimation);
   });
 
-  // const animationHeader = () => {
-  //   if (window === $desktop - breakpoint) {
-  //     return { width: 470, height: 600 };
-  //   } else {
-  //     return { width: 200, height: 160 };
-  //   }
-  // };
+  
   return (
     <header>
       <div className="header">
