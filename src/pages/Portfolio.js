@@ -35,20 +35,7 @@ const Portfolio = () => {
         <h1 className="list-title">My projects</h1>
 
         {Data.map((post, id) => {
-          // const card = () => {
-          //   switch (post.id) {
-          //     case 3:
-          //       return { width: 612 };
-          //     case 4:
-          //       return { width: 612 };
-          //     case 6:
-          //       return { width: 612 };
-          //     case 7:
-          //       return { width: 612 };
-          //   }
-          // };
-          // style={card()} put it in div list-columns
-
+          
           return (
             <div key={post.id}>
               <div className="list-columns">
@@ -165,4 +152,4 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-// Esse vai ser tipo Tour.js
+
