@@ -11,9 +11,9 @@ const Home = () => (
   <div id="home">
     <Navbar />
     <Header />
+    <Projects />
     <About />
     <Services />
-    <Projects />
     <Skills />
     <Contact />
   </div>
