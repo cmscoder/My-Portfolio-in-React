@@ -33,120 +33,117 @@ const Portfolio = () => {
     <div className="section-portfolio ">
       <div className="content-container">
         <h1 className="list-title">My projects</h1>
-        <div className="list-gridd">
-          {Data.map((post, id) => {
-            return (
-              <div key={post.id}>
-                <div className="list-columns">
-                  <article className="list-item">
-                    <img src={post.image} alt={post.title} />
-                    <footer>
-                      <div className="list-info">
-                        <div className="list-item__title">
-                          <h4>{post.title}</h4>
-                        </div>
-                        <div className="name-icons">
-                          <i className="devicon-html5-plain-wordmark colored list-technologies__icons">
-                            {post.html}
-                          </i>
 
-                          <i className="devicon-css3-plain-wordmark colored list-technologies__icons">
-                            {post.css}
-                          </i>
-
-                          <i className="devicon-javascript-plain colored list-technologies__icons">
-                            {post.js}
-                          </i>
-                          {"bootstrap" in post ? (
-                            <i className="devicon-bootstrap-plain-wordmark colored list-technologies__icons">
-                              {post.bootstrap}
-                            </i>
-                          ) : (
-                            ""
-                          )}
-                          {"ruby" in post ? (
-                            <i className="devicon-ruby-plain-wordmark colored list-technologies__icons">
-                              {post.ruby}
-                            </i>
-                          ) : (
-                            ""
-                          )}
-                          {"rails" in post ? (
-                            <i className="devicon-rails-plain-wordmark colored list-technologies__icons">
-                              {post.rails}
-                            </i>
-                          ) : (
-                            ""
-                          )}
-                          {"sass" in post ? (
-                            <i className="devicon-sass-plain colored list-technologies__icons">
-                              {post.sass}
-                            </i>
-                          ) : (
-                            ""
-                          )}
-                          {"react" in post ? (
-                            <i className="devicon-react-plain-wordmark colored list-technologies__icons">
-                              {post.sass}
-                            </i>
-                          ) : (
-                            ""
-                          )}
-                        </div>
+        {Data.map((post, id) => {
+          return (
+            <div key={post.id}>
+              <div className="list-columns">
+                <article className="list-item">
+                  <img src={post.image} alt={post.title} />
+                  <footer>
+                    <div className="list-info">
+                      <div className="list-item__title">
+                        <h4>{post.title}</h4>
                       </div>
-                      <div className="list-info--content"></div>
-
-                      {showModal && (
-                        <Modal closeModal={closeModal} info={selectedId} />
-                      )}
-
-                      <div className="list-info__icons">
-                        <button
-                          className="button button-details"
-                          onClick={() => handleShowModal(post)}
-                        >
-                          More details
-                        </button>
-                        <ul>
-                          <li>
-                            <a href={post.urlproject} target="_blank">
-                              {"browser" in post ? (
-                                <i className="devicon-chrome-plain">
-                                  {post.browser}
-                                </i>
-                              ) : (
-                                ""
-                              )}
-                            </a>
-                          </li>
-                          <li>
-                            <a href={post.urlgithub} target="_blank">
-                              {"github" in post ? (
-                                <i className="devicon-github-original">
-                                  {post.github}
-                                </i>
-                              ) : (
-                                ""
-                              )}
-                            </a>
-                          </li>
-                        </ul>
+                      <div>
+                        <i className="devicon-html5-plain-wordmark colored list-technologies__icons">
+                          {post.html}
+                        </i>
+                        <i className="devicon-css3-plain-wordmark colored list-technologies__icons">
+                          {post.css}
+                        </i>
+                        <i className="devicon-javascript-plain colored list-technologies__icons">
+                          {post.js}
+                        </i>
+                        {"bootstrap" in post ? (
+                          <i className="devicon-bootstrap-plain-wordmark colored list-technologies__icons">
+                            {post.bootstrap}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"ruby" in post ? (
+                          <i className="devicon-ruby-plain-wordmark colored list-technologies__icons">
+                            {post.ruby}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"rails" in post ? (
+                          <i className="devicon-rails-plain-wordmark colored list-technologies__icons">
+                            {post.rails}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"sass" in post ? (
+                          <i className="devicon-sass-plain-wordmark colored list-technologies__icons">
+                            {post.sass}
+                          </i>
+                        ) : (
+                          ""
+                        )}
+                        {"react" in post ? (
+                          <i className="devicon-react-plain-wordmark colored list-technologies__icons">
+                            {post.sass}
+                          </i>
+                        ) : (
+                          ""
+                        )}
                       </div>
-                    </footer>
-                  </article>
-                </div>
+                    </div>
+                    <div className="list-info--content"></div>
+
+                    {showModal && (
+                      <Modal closeModal={closeModal} info={selectedId} />
+                    )}
+
+                    <div className="list-info__icons">
+                      <button
+                        className="button button-details"
+                        onClick={() => handleShowModal(post)}
+                      >
+                        More details
+                      </button>
+                      <ul>
+                        <li>
+                          <a href={post.urlproject} target="_blank">
+                            {"browser" in post ? (
+                              <i className="devicon-chrome-plain">
+                                {post.browser}
+                              </i>
+                            ) : (
+                              ""
+                            )}
+                          </a>
+                        </li>
+                        <li>
+                          <a href={post.urlgithub} target="_blank">
+                            {"github" in post ? (
+                              <i className="devicon-github-original">
+                                {post.github}
+                              </i>
+                            ) : (
+                              ""
+                            )}
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </footer>
+                </article>
               </div>
-            );
-          })}
-          <footer>
-            <Link to="/">
-              <button className=" button">
-                <FontAwesomeIcon icon={faBackward} className="icon-color" />
-                Back Home
-              </button>
-            </Link>
-          </footer>
-        </div>
+            </div>
+          );
+        })}
+        <footer>
+          <Link to="/">
+            <button className=" button">
+              <FontAwesomeIcon icon={faBackward} className="icon-color" />
+              Back Home
+            </button>
+          </Link>
+        </footer>
       </div>
     </div>
   );
